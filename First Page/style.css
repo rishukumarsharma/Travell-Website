@@ -922,7 +922,7 @@ body {
 }
 
 .hero-text {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(5rem, 4vw, 2.5rem);
   font-family: "Aclonica", sans-serif;
   font-weight: 700;
   color: #cc5c23;
@@ -968,8 +968,8 @@ body {
 }
 
 .stats {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 600;
+  font-size: clamp(2.5vw, 3vw, 2rem);
+  font-weight: 700;
   color: #000;
 }
 
@@ -986,7 +986,7 @@ body {
 /* Why Choose Section */
 .why-choose-section {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/Image/whychooseusbackground.png");
+    url("/Image/humayun.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1006,12 +1006,16 @@ body {
   margin-bottom: 20px;
   font-size: 1.3rem;
 }
+.why{
+  font-family: "Aclonica", sans-serif;
+}
 
 .card-body-custom p {
   font-size: 15px;
   color: #333;
   line-height: 1.6;
 }
+
 
 /* Main Carousel Section */
 .carousel-container {
@@ -1090,13 +1094,13 @@ body {
   z-index: 5;
 }
 
-.traveler-image {
+/* .traveler-image {
   width: clamp(250px, 30vw, 450px);
   height: clamp(300px, 40vh, 550px);
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
-}
+} */
 
 /* Spring Card */
 .spring-card {
