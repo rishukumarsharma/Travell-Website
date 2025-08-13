@@ -27,7 +27,7 @@ body {
 
 .hero-heading {
   font-family: "Aclonica", sans-serif;
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(8rem, 8vw, 6rem);
   font-weight: 800;
   line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -308,6 +308,7 @@ body {
 }
 
 .season-card {
+  border-radius: 20px !important;
   flex: 0 0 280px;
   min-width: 280px;
   max-width: 280px;
@@ -336,7 +337,6 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
 #tourCarousel .row::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -424,7 +424,7 @@ body {
 
 /* Common Card Styles */
 .card-custom {
-  border-radius: 20px;
+  /* border-radius: 40px; */
   height: 100%;
   margin-bottom: 20px;
   /* border: none; */
@@ -511,6 +511,7 @@ body {
 
 .interest-card:hover {
   transform: scale(1.05);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
 }
 
 .interest-overlay {
@@ -2582,12 +2583,14 @@ html {
     flex: 0 0 220px;
     min-width: 220px;
     max-width: 220px;
+    border-radius: 20px !important;
   }
 
   .travel-card {
-    flex: 0 0 280px;
-    min-width: 280px;
-  }
+  flex: 0 0 250px;
+  min-width: 250px;
+  max-width: 250px;
+  border-radius: 20px !important;
 
   .season-carousel-container {
     padding: 0 50px;
@@ -2609,4 +2612,5 @@ html {
 }
 .tabspop {
   background-color: rgb(244, 244, 255);
+}
 }
