@@ -361,10 +361,10 @@ body {
 
 .season-card {
   border-radius: 20px !important;
-  flex: 0 0 280px;
-  min-width: 280px;
-  max-width: 280px;
-  padding: 0 10px;
+  flex: 0 0 340px;
+  min-width: 340px;
+  max-width: 340px;
+  padding: 0 16px;
   scroll-snap-align: start;
 }
 

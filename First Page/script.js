@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-    // Add this JavaScript code to your existing <script> section
+
+  // The following code was originally a template comment and is not needed in production.
+  // // Add this JavaScript code to your existing <script> section
 
     // Sidebar functionality
     document.addEventListener("DOMContentLoaded", () => {
@@ -123,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       })
     })
-    // Loading Animation
+  // Loading Animation
     document.addEventListener('DOMContentLoaded', function () {
       const observerOptions = {
         threshold: 0.1,
@@ -143,11 +145,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-    // Travel Blog Navigation
+  // Travel Blog Navigation
     const cardsWrapper = document.getElementById('cardsWrapper');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
+    // The following block is for travel blog navigation. If not used, you can comment it out.
+    /*
     if (cardsWrapper && prevBtn && nextBtn) {
       // Card width including gap
       const cardWidth = 370; // 350px card + 20px gap
@@ -211,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Initialize button states on page load
       setTimeout(updateButtonStates, 100);
     }
+    */
 
     // Add touch/swipe support for mobile
     let startX = 0;
