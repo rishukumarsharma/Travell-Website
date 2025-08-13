@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Your Dream Destination</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../sidebar_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts for Aclonica -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+
+  <body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
+      <div class="container-fluid justify-content-between align-items-center">
+        <!-- Mobile Menu Button -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          id="sidebarToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Logo - Always Visible -->
+        <a class="navbar-brand left-logo mx-auto mx-lg-0" href="#">
+          <img src="/Image/magical logo.png" alt="Logo" height="40" />
+        </a>
+
+        <!-- Desktop Navigation - Hidden on Mobile -->
+        <div
+          class="d-none d-lg-flex align-items-center justify-content-between"
+          style="width: 100%"
+        >
+          <ul
+            class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link contact-info" href="#"
+                ><i class="bi bi-whatsapp"></i> +91 9999 999 999</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >DESTINATIONS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >EXPERIENCES</a
+              >
+            </li>
+          </ul>
+          <a class="navbar-brand mx-auto mx-lg-0" href="#">
+            <img src="/Image/magical logo.png" alt="Logo" height="40" />
+          </a>
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Third Page/index.html">PLANNER QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">TOUR BY INTERESTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="btn btn-orange">Enquire Now</a>
+            </li>
+
+            <button
+              style="display: block"
+              class="navbar-toggler"
+              type="button"
+              id="sidebarToggle2"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </ul>
+        </div>
+
+        <!-- Mobile Enquire Button -->
+        <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
+      </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="/Image/magical logo.png" alt="Logo" height="35" />
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Contact</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-whatsapp"></i>
+            <span>+91 9999 999 999</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Navigation</h6>
+          <a href="#destinations" class="sidebar-link">
+            <i class="bi bi-geo-alt"></i>
+            <span>Destinations</span>
+          </a>
+          <a href="#experiences" class="sidebar-link">
+            <i class="bi bi-star"></i>
+            <span>Experiences</span>
+          </a>
+          <a href="#planner" class="sidebar-link">
+            <i class="bi bi-clipboard-check"></i>
+            <span>Planner Quiz</span>
+          </a>
+          <a href="#interests" class="sidebar-link">
+            <i class="bi bi-heart"></i>
+            <span>Tour by Interests</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Quick Actions</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-search"></i>
+            <span>Search Tours</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-translate"></i>
+            <span>Language (EN)</span>
+          </a>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="#contact" class="btn btn-orange w-100">
+            <i class="bi bi-envelope"></i>
+            Enquire Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive Hero Section -->
+    <section class="magical-hero-section" id="home">
+      <div class="magical-hero-content">
+        <h1 class="magical-hero-title fs">DESTINATIONS</h1>
+        <p class="magical-hero-subtitle">
+          India is packed with destinations that cater to every vibe—whether
+          you're after history, nature, food, adventure, or just chilling.
+        </p>
+        <div class="magical-hero-buttons">
+          <a href="#destinations" class="magical-btn-see-more">See More</a>
+          <a href="#contact" class="magical-btn-enquire">Enquire Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- crausel seciton -->
+    <div class="exotic-journey-slider-track" id="exoticSliderTrack">
+      <!-- Card 1 -->
+      <div class="exotic-journey-travel-item" data-slide-index="0">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image 19.png" alt="The City of Lakes Udaipur" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            The City of Lakes<br />Udaipur, Rajasthan
+          </h3>
+          <p class="exotic-journey-place-summary">
+            An awe-inspiring 13th-century shrine dedicated to the Sun God,
+            Surya, the Konark Temple stands as a symbol of divine energy and
+            celestial craftsmanship.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- rishu -->
+      <!-- Card 2 -->
+      <div class="exotic-journey-travel-item" data-slide-index="1">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image21.png" alt="Backwaters & Bliss Kumarakom" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Backwaters & Bliss<br />Kumarakom, Kerala
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Experience the serene backwaters of Kerala, where traditional
+            houseboats glide through emerald waters surrounded by lush coconut
+            groves and exotic wildlife.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="exotic-journey-travel-item" data-slide-index="2">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image22.png" alt="The City of Lakes Udaipur" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            The City of Lakes<br />Udaipur, Rajasthan
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Known as the Venice of the East, Udaipur captivates visitors with
+            its magnificent palaces, pristine lakes, and rich cultural heritage.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4 - Center/Active Card -->
+      <div
+        class="exotic-journey-travel-item exotic-journey-featured-item"
+        data-slide-index="3"
+      >
+        <div class="exotic-journey-photo-container">
+          <img
+            src="/Image/image 19.png"
+            alt="Divine Chariot Konark Sun Temple"
+          />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Divine Chariot<br />Konark Sun Templ...
+          </h3>
+          <p class="exotic-journey-place-summary">
+            An awe-inspiring 13th-century shrine dedicated to the Sun God,
+            Surya, the Konark Temple stands as a symbol of divine energy and
+            celestial craftsmanship.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="exotic-journey-travel-item" data-slide-index="4">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image20.png" alt="Timeless Stories Hampi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Timeless Stories<br />Hampi, Karnataka
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Step into the ruins of the Vijayanagara Empire, where ancient
+            temples and boulder landscapes tell stories of a glorious past.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="exotic-journey-travel-item" data-slide-index="5">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image21.png" alt="Spiritual Capital Varanasi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Spiritual Capital<br />Varanasi, Uttar Pra...
+          </h3>
+          <p class="exotic-journey-place-summary">
+            One of the world's oldest cities, Varanasi offers a profound
+            spiritual experience along the sacred Ganges River with its ancient
+            ghats and temples.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="exotic-journey-travel-item" data-slide-index="6">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image22.png" alt="Timeless Stories Hampi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Timeless Stories<br />Hampi, Karnataka
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Discover the architectural marvels and historical significance of
+            this UNESCO World Heritage site in Karnataka.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="exotic-journey-travel-item" data-slide-index="7">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image22.png" alt="Timeless Stories Hampi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Timeless Stories<br />Hampi, Karnataka
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Discover the architectural marvels and historical significance of
+            this UNESCO World Heritage site in Karnataka.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="exotic-journey-travel-item" data-slide-index="8">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image22.png" alt="Timeless Stories Hampi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Timeless Stories<br />Hampi, Karnataka
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Discover the architectural marvels and historical significance of
+            this UNESCO World Heritage site in Karnataka.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="exotic-journey-travel-item" data-slide-index="9">
+        <div class="exotic-journey-photo-container">
+          <img src="/Image/image22.png" alt="Timeless Stories Hampi" />
+          <button class="exotic-journey-favorite-toggle">
+            <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="exotic-journey-info-panel">
+          <div class="exotic-journey-rating-display">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="exotic-journey-location-title">
+            Timeless Stories<br />Hampi, Karnataka
+          </h3>
+          <p class="exotic-journey-place-summary">
+            Discover the architectural marvels and historical significance of
+            this UNESCO World Heritage site in Karnataka.
+          </p>
+          <button class="exotic-journey-read-more-btn">
+            Continue Reading <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid hero-section">
+      <div class="container">
+        <div class="row"></div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="col-12">
+              <button class="categories-btn">Categories</button>
+            </div>
+            <h1 class="hero-title">Discover your next dream destination</h1>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+            <p class="hero-description">
+              A dream destination offers breathtaking landscapes, rich culture,
+              and unforgettable experiences. From serene mountains and pristine
+              beaches to vibrant cities and ancient wonders, it's a place that
+              inspires awe and lasting memories.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="destination-carousel">
+              <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                  <!-- Waterfall Slide -->
+                  <div class="destination-slide waterfall-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-title">Waterfall</h3>
+                      <p class="slide-description">
+                        Discover breathtaking waterfalls with us! Experience the
+                        thrill of cascading waters, serene natural pools, and
+                        lush landscapes. Book your unforgettable waterfall
+                        adventure today and create memories that will last a
+                        lifetime!
+                      </p>
+                      <button class="enquire-btn">Enquire Now</button>
+                    </div>
+                  </div>
+                  <!-- Lake Slide -->
+                  <div class="destination-slide lake-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-title">Lake</h3>
+                      <p class="slide-description">
+                        Discover crystal-clear lakes surrounded by majestic
+                        mountains. Perfect for peaceful reflection, water
+                        activities, and stunning sunrise views that will take
+                        your breath away.
+                      </p>
+                      <button class="enquire-btn">Enquire Now</button>
+                    </div>
+                  </div>
+                  <!-- Beach Slide -->
+                  <div class="destination-slide beach-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-title">Beach</h3>
+                      <p class="slide-description">
+                        Experience pristine beaches with golden sands and
+                        turquoise waters. Enjoy tropical paradise, water sports,
+                        and unforgettable sunsets by the ocean.
+                      </p>
+                      <button class="enquire-btn">Enquire Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Arrows -->
+              <button class="carousel-nav prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-nav next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kerala-travel-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="kerala-freshly-badge">Freshly Added</div>
+            <p class="kerala-description-text">
+              Explore our freshly added gems, from pristine beaches and hidden
+              islands to breathtaking mountains and cultural hotspots. Start
+              planning your next adventure with these exciting new locations,
+              curated for unforgettable experiences and unique travel memories.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="kerala-main-title text-end">
+              Turning Dreams Into Destinations
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- First 2 columns: Large Image -->
+          <div class="col-lg-3 col-md-3 col-4">
+            <img
+              src="/Image/kerla1 (4).jpg"
+              alt="Kerala Beach Scene"
+              class="img-fluid h-100 w-100 rounded"
+              style="object-fit: cover; min-height: 300px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-4 d-none d-md-block">
+            <img
+              src="/Image/kerla (2).jpg"
+              alt="Kerala Beach Scene"
+              class="img-fluid h-100 w-100 rounded"
+              style="object-fit: cover; min-height: 300px"
+            />
+          </div>
+          <!-- Middle 2 columns: Slider -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="kerala-slider-container">
+              <div class="kerala-slider-wrapper" id="keralaSlider">
+                <!-- Slide 1 - Main Kerala Card -->
+                <div class="kerala-slide">
+                  <div class="kerala-main-card">
+                    <div>
+                      <h2 class="kerala-card-title">Kerala</h2>
+                      <p class="kerala-card-description">
+                        Nestled on the southwestern coast of India, Kerala is a
+                        tropical paradise famed for its lush greenery, pristine
+                        backwaters, and golden beaches.
+                      </p>
+                    </div>
+                    <button class="btn kerala-book-btn">Book Now</button>
+                  </div>
+                </div>
+                <div class="kerala-slide">
+                  <div class="kerala-main-card">
+                    <div>
+                      <h2 class="kerala-card-title">Goa</h2>
+                      <p class="kerala-card-description">
+                        Experience the vibrant beaches, Portuguese heritage, and
+                        laid-back lifestyle of India's coastal paradise.
+                      </p>
+                    </div>
+                    <button class="btn kerala-book-btn">Book Now</button>
+                  </div>
+                </div>
+                <div class="kerala-slide">
+                  <div class="kerala-main-card">
+                    <div>
+                      <h2 class="kerala-card-title">Rajasthan</h2>
+                      <p class="kerala-card-description">
+                        Discover the royal heritage, majestic palaces, and
+                        desert landscapes of India's most colorful state.
+                      </p>
+                    </div>
+                    <button class="btn kerala-book-btn">Book Now</button>
+                  </div>
+                </div>
+                <div class="kerala-slide">
+                  <div class="kerala-main-card">
+                    <div>
+                      <h2 class="kerala-card-title">Kashmir</h2>
+                      <p class="kerala-card-description">
+                        Experience paradise on earth with snow-capped mountains,
+                        pristine lakes, and breathtaking valleys.
+                      </p>
+                    </div>
+                    <button class="btn kerala-book-btn">Book Now</button>
+                  </div>
+                </div>
+                <div class="kerala-slide">
+                  <div class="kerala-main-card">
+                    <div>
+                      <h2 class="kerala-card-title">Himachal</h2>
+                      <p class="kerala-card-description">
+                        Explore the serene hill stations, adventure sports, and
+                        spiritual retreats in the lap of Himalayas.
+                      </p>
+                    </div>
+                    <button class="btn kerala-book-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Arrows -->
+              <div
+                class="kerala-nav-arrows kerala-nav-left"
+                onclick="slideKerala(-1)"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div
+                class="kerala-nav-arrows kerala-nav-right"
+                onclick="slideKerala(1)"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <img
+              src="/Image/kerla (3).jpg"
+              alt="Kerala Beach Scene"
+              class="img-fluid h-100 w-100 rounded"
+              style="object-fit: cover; min-height: 300px"
+            />
+          </div>
+        </div>
+        <!-- Image Grid -->
+        <div class="kerala-image-grid">
+          <div class="kerala-image-card">
+            <img src="/Image/kerla1 (1).jpg" alt="Kerala Beach Scene" />
+          </div>
+          <div class="kerala-image-card">
+            <img src="/Image/kerla1 (2).jpg" alt="Kerala Landscape" />
+          </div>
+          <div class="kerala-image-card">
+            <img src="/Image/kerla1 (3).jpg" alt="Kerala Nature" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destinations Section with Fixed Functionality -->
+    <div class="destinations-voyage-wrapper">
+      <!-- Year Round Trip Badge -->
+      <div class="destinations-annual-trip-label">Year Round Trip</div>
+
+      <!-- Main Heading -->
+      <h1 class="destinations-primary-title">
+        Destinations perfect for every season
+      </h1>
+
+      <!-- Navigation Tabs -->
+      <div class="destinations-navigation-wrapper">
+        <div class="destinations-region-navigation">
+          <a
+            class="destinations-territory-link selected"
+            href="#"
+            data-region="north"
+            >North India</a
+          >
+          <a class="destinations-territory-link" href="#" data-region="south"
+            >South India</a
+          >
+          <a class="destinations-territory-link" href="#" data-region="east"
+            >East India</a
+          >
+          <a class="destinations-territory-link" href="#" data-region="west"
+            >West India</a
+          >
+          <a class="destinations-territory-link" href="#" data-region="central"
+            >Central India</a
+          >
+        </div>
+      </div>
+
+      <!-- Destinations Carousel -->
+      <div class="destinations-slider-area">
+        <!-- Navigation Arrows -->
+        <button
+          class="destinations-slide-arrow backward"
+          id="destinationsBackward"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          class="destinations-slide-arrow forward"
+          id="destinationsForward"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Destination Cards Container -->
+        <div class="destinations-slider-wrapper">
+          <div class="destinations-places-container" id="destinationsContainer">
+            <!-- Card 1 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Golden Triangle"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  30°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Golden Triangle</h3>
+                <p class="destinations-cities-list">DELHI, AGRA, JAIPUR</p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Rajasthan"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  28°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Rajasthan Royal</h3>
+                <p class="destinations-cities-list">JAIPUR, UDAIPUR, JODHPUR</p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Himachal Pradesh"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  15°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Himachal Hills</h3>
+                <p class="destinations-cities-list">
+                  SHIMLA, MANALI, DHARAMSHALA
+                </p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Kashmir"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  12°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Kashmir Paradise</h3>
+                <p class="destinations-cities-list">
+                  SRINAGAR, GULMARG, PAHALGAM
+                </p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Uttarakhand"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  18°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Uttarakhand Trek</h3>
+                <p class="destinations-cities-list">
+                  RISHIKESH, HARIDWAR, NAINITAL
+                </p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Ladakh"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  8°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Ladakh Adventure</h3>
+                <p class="destinations-cities-list">LEH, NUBRA, PANGONG</p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Goa Beaches"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  32°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Goa Beaches</h3>
+                <p class="destinations-cities-list">
+                  PANAJI, CALANGUTE, ANJUNA
+                </p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="destinations-travel-item">
+              <div class="destinations-photo-holder">
+                <img
+                  src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Kerala Backwaters"
+                  class="destinations-location-photo"
+                />
+                <div class="destinations-weather-indicator">
+                  <i class="fas fa-thermometer-half"></i>
+                  29°
+                </div>
+              </div>
+              <div class="destinations-item-details">
+                <h3 class="destinations-location-name">Kerala Backwaters</h3>
+                <p class="destinations-cities-list">
+                  ALLEPPEY, KUMARAKOM, KOCHI
+                </p>
+                <div class="destinations-action-controls">
+                  <button class="destinations-discover-button">Explore</button>
+                  <button class="destinations-reserve-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="destinations-indicator-section">
+        <div class="destinations-progress-dot current" data-slide="0"></div>
+        <div class="destinations-progress-dot" data-slide="1"></div>
+        <div class="destinations-progress-dot" data-slide="2"></div>
+        <div class="destinations-progress-dot" data-slide="3"></div>
+      </div>
+    </div>
+
+    <!-- Travel Blog Section -->
+    <section class="travel-blog-section" id="blog">
+      <div class="travel-section">
+        <div class="section-header">
+          <h1 class="section-title loading">
+            Read the latest from<br />our travel tales!
+          </h1>
+          <a href="#" class="view-all-link">View All</a>
+        </div>
+        <div class="cards-container">
+          <div class="cards-wrapper" id="cardsWrapper">
+            <div class="travel-card card-humayun loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+                <p class="card-date">10 February, 2025</p>
+                <p class="card-description">
+                  Humayun's Tomb in Delhi is a stunning Mughal-era monument,
+                  known for its Persian-style architecture, lush gardens, and
+                  historical grandeur.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="travel-card card-lucknow loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Bara Imambara, Lucknow</h3>
+                <p class="card-date">10 February, 2025</p>
+                <p class="card-description">
+                  Bara Imambara in Lucknow is an architectural marvel, famous for
+                  its central hall, one of the largest arched constructions
+                  without support beams.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="travel-card card-delhi loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+                <p class="card-date">10 February, 2025</p>
+                <p class="card-description">
+                  Humayun's Tomb in Delhi is a stunning Mughal-era monument,
+                  known for its Persian-style architecture, lush gardens, and
+                  historical grandeur.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="travel-card card-mumbai loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Magical Mumbai</h3>
+                <p class="card-date">10 February, 2025</p>
+                <p class="card-description">
+                  Mumbai evenings are a magical blend of city lights. As the sun
+                  sets over Marine Drive, locals and travelers gather to enjoy
+                  the cool air and scenic views.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="travel-card card-kolkata loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Rajasthan Royal Heritage</h3>
+                <p class="card-date">8 February, 2025</p>
+                <p class="card-description">
+                  Experience the royal grandeur of Rajasthan with its
+                  magnificent palaces, vibrant culture, and desert landscapes
+                  that tell tales of ancient kingdoms.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="travel-card card-gorakhpur loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Kerala Backwater Bliss</h3>
+                <p class="card-date">5 February, 2025</p>
+                <p class="card-description">
+                  Drift through the serene backwaters of Kerala on traditional
+                  houseboats, surrounded by lush greenery and the gentle sounds
+                  of nature.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+                <div class="travel-card card-noida loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Kerala Backwater Bliss</h3>
+                <p class="card-date">5 February, 2025</p>
+                <p class="card-description">
+                  Drift through the serene backwaters of Kerala on traditional
+                  houseboats, surrounded by lush greenery and the gentle sounds
+                  of nature.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+                <div class="travel-card card-gurgaon loading">
+              <div class="share-icon">
+                <i class="fas fa-share-alt"></i>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Kerala Backwater Bliss</h3>
+                <p class="card-date">5 February, 2025</p>
+                <p class="card-description">
+                  Drift through the serene backwaters of Kerala on traditional
+                  houseboats, surrounded by lush greenery and the gentle sounds
+                  of nature.
+                </p>
+                <a href="#" class="continue-reading">
+                  Continue Reading <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-controls">
+          <button class="nav-btn" id="prevBtnBlog">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nav-btn" id="nextBtnBlog">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-content">
+        <div class="container">
+          <!-- Newsletter Section -->
+          <div class="newsletter-section">
+            <h2 class="loading">Receive Inspiration In Your Inbox</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-8">
+                <form id="newsletterForm" class="loading">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailConsent"
+                      required
+                    />
+                    <label class="form-check-label" for="emailConsent">
+                      I'm happy to receive emails from Magical India Travels
+                    </label>
+                  </div>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Destinations Section -->
+          <div class="destinations-section" id="destinations">
+            <h3 class="loading">DESTINATIONS</h3>
+            <div class="destination-links">
+              <a href="#ladakh" class="loading">Ladakh</a>
+              <a href="#lakshyadeep" class="loading">Lakshyadeep</a>
+              <a href="#kashmir" class="loading">Kashmir</a>
+              <a href="#andaman" class="loading">Andaman & Nicobar Island</a>
+              <a href="#uttrakhand" class="loading">Uttrakhand</a>
+            </div>
+          </div>
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="logo-container">
+                  <img
+                    src="/Image/magical logo.png"
+                    alt="Magical India Travels Logo"
+                    class="loading"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="contact-info loading">
+                  <p><strong>IND:</strong> +91 2350983099</p>
+                  <p><strong>Email:</strong> enquiry@gmail.com</p>
+                  <p>
+                    <strong>Address:</strong><br />
+                    Dwarka Mor, Near Lal Farm,<br />
+                    New Delhi 110059
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="copyright">
+              <p>&copy; 2025, All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      class DestinationCarousel {
+        constructor() {
+          this.currentSlide = 0;
+          this.totalSlides = 3;
+          this.track = document.getElementById("carouselTrack");
+          this.indicators = document.querySelectorAll(".indicator");
+          this.prevBtn = document.getElementById("prevBtn");
+          this.nextBtn = document.getElementById("nextBtn");
+          this.init();
+        }
+
+        init() {
+          // Add event listeners
+          this.prevBtn.addEventListener("click", () => this.prevSlide());
+          this.nextBtn.addEventListener("click", () => this.nextSlide());
+          this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener("click", () => this.goToSlide(index));
+          });
+          // Touch/swipe support
+          this.addTouchSupport();
+          // Auto-play (optional)
+          this.startAutoPlay();
+        }
+
+        goToSlide(slideIndex) {
+          this.currentSlide = slideIndex;
+          const translateX = -slideIndex * (100 / this.totalSlides);
+          this.track.style.transform = `translateX(${translateX}%)`;
+          // Update indicators
+          this.indicators.forEach((indicator, index) => {
+            indicator.classList.toggle("active", index === slideIndex);
+          });
+        }
+
+        nextSlide() {
+          this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+          this.goToSlide(this.currentSlide);
+        }
+
+        prevSlide() {
+          this.currentSlide =
+            (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+          this.goToSlide(this.currentSlide);
+        }
+
+        addTouchSupport() {
+          let startX = 0;
+          let currentX = 0;
+          let isDragging = false;
+
+          this.track.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+          });
+
+          this.track.addEventListener("touchmove", (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+          });
+
+          this.track.addEventListener("touchend", () => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diffX = startX - currentX;
+            const threshold = 50;
+            if (Math.abs(diffX) > threshold) {
+              if (diffX > 0) {
+                this.nextSlide();
+              } else {
+                this.prevSlide();
+              }
+            }
+          });
+        }
+
+        startAutoPlay() {
+          setInterval(() => {
+            this.nextSlide();
+          }, 5000); // Change slide every 5 seconds
+        }
+      }
+
+      // Kerala card section
+      let keralaCurrentSlide = 0;
+      const keralaTotalSlides = 5;
+      function slideKerala(direction) {
+        const slider = document.getElementById("keralaSlider");
+        keralaCurrentSlide += direction;
+        if (keralaCurrentSlide >= keralaTotalSlides) {
+          keralaCurrentSlide = 0;
+        } else if (keralaCurrentSlide < 0) {
+          keralaCurrentSlide = keralaTotalSlides - 1;
+        }
+        const translateX = -keralaCurrentSlide * 20; // 20% per slide
+        slider.style.transform = `translateX(${translateX}%)`;
+      }
+
+      // Auto-slide functionality (optional)
+      setInterval(() => {
+        slideKerala(1);
+      }, 5000);
+
+      // Touch/swipe support for mobile
+      let keralaStartX = 0;
+      let keralaEndX = 0;
+      document
+        .querySelector(".kerala-slider-container")
+        .addEventListener("touchstart", (e) => {
+          keralaStartX = e.touches[0].clientX;
+        });
+      document
+        .querySelector(".kerala-slider-container")
+        .addEventListener("touchend", (e) => {
+          keralaEndX = e.changedTouches[0].clientX;
+          handleKeralaSwipe();
+        });
+
+      function handleKeralaSwipe() {
+        const swipeThreshold = 50;
+        const diff = keralaStartX - keralaEndX;
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            slideKerala(1); // Swipe left - next slide
+          } else {
+            slideKerala(-1); // Swipe right - previous slide
+          }
+        }
+      }
+
+      // Destinations Section Carousel - FIXED FUNCTIONALITY
+      class DestinationsCarousel {
+        constructor() {
+          this.currentSlide = 0;
+          this.container = document.getElementById("destinationsContainer");
+          this.cards = document.querySelectorAll(".destinations-travel-item");
+          this.totalCards = this.cards.length;
+          this.cardWidth = 0;
+          this.gap = 24;
+          this.cardsPerView = 1;
+          this.maxSlides = 0;
+
+          this.backwardBtn = document.getElementById("destinationsBackward");
+          this.forwardBtn = document.getElementById("destinationsForward");
+          this.dots = document.querySelectorAll(".destinations-progress-dot");
+
+          this.calculateDimensions();
+          this.init();
+          this.updateButtons();
+        }
+
+        calculateDimensions() {
+          if (this.cards.length > 0) {
+            const containerWidth = this.container.parentElement.offsetWidth;
+            const cardRect = this.cards[0].getBoundingClientRect();
+            this.cardWidth = cardRect.width;
+
+            // Calculate cards per view based on container width
+            if (window.innerWidth <= 576) {
+              this.cardsPerView = 1;
+            } else if (window.innerWidth <= 768) {
+              this.cardsPerView = 1;
+            } else if (window.innerWidth <= 992) {
+              this.cardsPerView = 2;
+            } else if (window.innerWidth <= 1200) {
+              this.cardsPerView = 3;
+            } else {
+              this.cardsPerView = 3;
+            }
+
+            this.maxSlides = Math.max(0, this.totalCards - this.cardsPerView);
+          }
+        }
+
+        init() {
+          // Add event listeners
+          this.backwardBtn.addEventListener("click", () => this.prevSlide());
+          this.forwardBtn.addEventListener("click", () => this.nextSlide());
+
+          // Dot navigation
+          this.dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => this.goToSlide(index));
+          });
+
+          // Touch/swipe support
+          this.addTouchSupport();
+
+          // Resize handler
+          window.addEventListener("resize", () => {
+            this.calculateDimensions();
+            this.currentSlide = Math.min(this.currentSlide, this.maxSlides);
+            this.updateSlider();
+          });
+        }
+
+        goToSlide(slideIndex) {
+          this.currentSlide = Math.max(0, Math.min(slideIndex, this.maxSlides));
+          this.updateSlider();
+        }
+
+        nextSlide() {
+          if (this.currentSlide < this.maxSlides) {
+            this.currentSlide++;
+            this.updateSlider();
+          }
+        }
+
+        prevSlide() {
+          if (this.currentSlide > 0) {
+            this.currentSlide--;
+            this.updateSlider();
+          }
+        }
+
+        updateSlider() {
+          const translateX = -this.currentSlide * (this.cardWidth + this.gap);
+          this.container.style.transform = `translateX(${translateX}px)`;
+
+          // Update dots
+          this.dots.forEach((dot, index) => {
+            dot.classList.toggle(
+              "current",
+              index ===
+                Math.floor(
+                  ((this.currentSlide * this.cardsPerView) / this.totalCards) *
+                    this.dots.length
+                )
+            );
+          });
+
+          this.updateButtons();
+        }
+
+        updateButtons() {
+          // Update button states
+          this.backwardBtn.style.opacity =
+            this.currentSlide === 0 ? "0.5" : "1";
+          this.backwardBtn.style.cursor =
+            this.currentSlide === 0 ? "not-allowed" : "pointer";
+          this.backwardBtn.disabled = this.currentSlide === 0;
+
+          this.forwardBtn.style.opacity =
+            this.currentSlide >= this.maxSlides ? "0.5" : "1";
+          this.forwardBtn.style.cursor =
+            this.currentSlide >= this.maxSlides ? "not-allowed" : "pointer";
+          this.forwardBtn.disabled = this.currentSlide >= this.maxSlides;
+        }
+
+        addTouchSupport() {
+          let startX = 0;
+          let currentX = 0;
+          let isDragging = false;
+
+          this.container.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+          });
+
+          this.container.addEventListener("touchmove", (e) => {
+            if (!isDragging) return;
+            currentX = e.touches[0].clientX;
+            e.preventDefault();
+          });
+
+          this.container.addEventListener("touchend", () => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diffX = startX - currentX;
+            const threshold = 50;
+
+            if (Math.abs(diffX) > threshold) {
+              if (diffX > 0) {
+                this.nextSlide();
+              } else {
+                this.prevSlide();
+              }
+            }
+          });
+        }
+      }
+
+      // Tab functionality for destinations
+      document
+        .querySelectorAll(".destinations-territory-link")
+        .forEach((tab) => {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove selected class from all tabs
+            document
+              .querySelectorAll(".destinations-territory-link")
+              .forEach((t) => t.classList.remove("selected"));
+
+            // Add selected class to clicked tab
+            this.classList.add("selected");
+          });
+        });
+
+      // Initialize carousel when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new DestinationCarousel();
+        // Add a small delay to ensure DOM is fully rendered
+        setTimeout(() => {
+          new DestinationsCarousel();
+          new TravelBlogSlider();
+        }, 100);
+      });
+
+      // Travel Blog Slider Class
+      class TravelBlogSlider {
+        constructor() {
+          this.currentIndex = 0;
+          this.cardsWrapper = document.getElementById("cardsWrapper");
+          this.prevBtn = document.getElementById("prevBtnBlog");
+          this.nextBtn = document.getElementById("nextBtnBlog");
+
+          if (!this.cardsWrapper || !this.prevBtn || !this.nextBtn) {
+            console.warn("Travel blog slider elements not found");
+            return;
+          }
+
+          this.init();
+        }
+
+        init() {
+          this.updateSlider();
+          this.attachEventListeners();
+          this.addTouchSupport();
+
+          // Update on window resize
+          window.addEventListener("resize", () => {
+            this.updateSlider();
+          });
+        }
+
+        getSliderDimensions() {
+          if (!this.cardsWrapper)
+            return { cardWidth: 350, maxIndex: 0, cardsPerView: 1 };
+
+          const cards = this.cardsWrapper.querySelectorAll(".travel-card");
+          if (cards.length === 0)
+            return { cardWidth: 350, maxIndex: 0, cardsPerView: 1 };
+
+          const containerWidth = this.cardsWrapper.parentElement.offsetWidth;
+          const cardElement = cards[0];
+          const cardStyle = window.getComputedStyle(cardElement);
+          const cardWidth =
+            parseFloat(cardStyle.flexBasis) || cardElement.offsetWidth;
+          const gap = 20;
+
+          let cardsPerView;
+          if (window.innerWidth <= 576) {
+            cardsPerView = 1;
+          } else if (window.innerWidth <= 768) {
+            cardsPerView = 1;
+          } else if (window.innerWidth <= 992) {
+            cardsPerView = 2;
+          } else {
+            cardsPerView = 3;
+          }
+
+          const maxIndex = Math.max(0, cards.length - cardsPerView);
+
+          return {
+            cardWidth: cardWidth + gap,
+            maxIndex: maxIndex,
+            totalCards: cards.length,
+            cardsPerView: cardsPerView,
+          };
+        }
+
+        updateSlider() {
+          if (!this.cardsWrapper) return;
+
+          const { cardWidth, maxIndex } = this.getSliderDimensions();
+
+          // Ensure current index is within bounds
+          this.currentIndex = Math.min(this.currentIndex, maxIndex);
+
+          const translateX = -this.currentIndex * cardWidth;
+          this.cardsWrapper.style.transform = `translateX(${translateX}px)`;
+
+          // Update button states
+          if (this.prevBtn && this.nextBtn) {
+            this.prevBtn.disabled = this.currentIndex === 0;
+            this.nextBtn.disabled = this.currentIndex >= maxIndex;
+
+            // Update button opacity
+            this.prevBtn.style.opacity = this.currentIndex === 0 ? "0.5" : "1";
+            this.nextBtn.style.opacity =
+              this.currentIndex >= maxIndex ? "0.5" : "1";
+          }
+        }
+
+        attachEventListeners() {
+          if (this.prevBtn) {
+            this.prevBtn.addEventListener("click", () => {
+              const { maxIndex } = this.getSliderDimensions();
+              if (this.currentIndex > 0) {
+                this.currentIndex--;
+                this.updateSlider();
+                this.animateCards();
+              }
+            });
+          }
+
+          if (this.nextBtn) {
+            this.nextBtn.addEventListener("click", () => {
+              const { maxIndex } = this.getSliderDimensions();
+              if (this.currentIndex < maxIndex) {
+                this.currentIndex++;
+                this.updateSlider();
+                this.animateCards();
+              }
+            });
+          }
+        }
+
+        animateCards() {
+          const cards = this.cardsWrapper.querySelectorAll(".travel-card");
+          cards.forEach((card, index) => {
+            card.style.transition = "all 0.3s ease";
+            card.style.opacity = "0.7";
+            card.style.transform = "scale(0.95)";
+
+            setTimeout(() => {
+              card.style.opacity = "1";
+              card.style.transform = "scale(1)";
+            }, 100 + index * 50);
+          });
+        }
+
+        addTouchSupport() {
+          let startX = 0;
+          let isDragging = false;
+
+          if (this.cardsWrapper) {
+            this.cardsWrapper.addEventListener("touchstart", (e) => {
+              startX = e.touches[0].clientX;
+              isDragging = true;
+            });
+
+            this.cardsWrapper.addEventListener("touchmove", (e) => {
+              if (!isDragging) return;
+              e.preventDefault();
+            });
+
+            this.cardsWrapper.addEventListener("touchend", (e) => {
+              if (!isDragging) return;
+
+              const endX = e.changedTouches[0].clientX;
+              const diff = startX - endX;
+              const { maxIndex } = this.getSliderDimensions();
+
+              if (Math.abs(diff) > 50) {
+                if (diff > 0 && this.currentIndex < maxIndex) {
+                  this.currentIndex++;
+                } else if (diff < 0 && this.currentIndex > 0) {
+                  this.currentIndex--;
+                }
+                this.updateSlider();
+                this.animateCards();
+              }
+
+              isDragging = false;
+            });
+          }
+        }
+      }
+
+      // Handle enquire buttons
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("enquire-btn")) {
+          alert("Enquiry form would open here!");
+        }
+      });
+
+      // Mobile Menu Toggle Function
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const toggleBtn = document.querySelector(".magical-mobile-toggle i");
+
+        mobileMenu.classList.toggle("active");
+
+        if (mobileMenu.classList.contains("active")) {
+          toggleBtn.className = "bi bi-x";
+        } else {
+          toggleBtn.className = "bi bi-list";
+        }
+      }
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".magical-mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const mobileMenu = document.getElementById("mobileMenu");
+          const toggleBtn = document.querySelector(".magical-mobile-toggle i");
+
+          mobileMenu.classList.remove("active");
+          toggleBtn.className = "bi bi-list";
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const navbar = document.querySelector(".magical-navbar");
+
+        if (
+          !navbar.contains(e.target) &&
+          mobileMenu.classList.contains("active")
+        ) {
+          mobileMenu.classList.remove("active");
+          document.querySelector(".magical-mobile-toggle i").className =
+            "bi bi-list";
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const sidebarToggle2 = document.getElementById("sidebarToggle2");
+        const sidebarClose = document.getElementById("sidebarClose");
+        const sidebar = document.getElementById("sidebar");
+        const sidebarOverlay = document.getElementById("sidebarOverlay");
+        const body = document.body;
+
+        // Open sidebar
+        function openSidebar() {
+          sidebar.classList.add("active");
+          sidebarOverlay.classList.add("active");
+          body.classList.add("sidebar-open");
+        }
+
+        // Close sidebar
+        function closeSidebar() {
+          sidebar.classList.remove("active");
+          sidebarOverlay.classList.remove("active");
+          body.classList.remove("sidebar-open");
+        }
+
+        // Event listeners
+        if (sidebarToggle) {
+          sidebarToggle.addEventListener("click", openSidebar);
+        }
+        if (sidebarToggle2) {
+          sidebarToggle2.addEventListener("click", openSidebar);
+        }
+
+        if (sidebarClose) {
+          sidebarClose.addEventListener("click", closeSidebar);
+        }
+
+        if (sidebarOverlay) {
+          sidebarOverlay.addEventListener("click", closeSidebar);
+        }
+
+        // Close sidebar when clicking on navigation links
+        document.querySelectorAll(".sidebar-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            // Only close if it's an anchor link (starts with #)
+            if (this.getAttribute("href").startsWith("#")) {
+              closeSidebar();
+            }
+          });
+        });
+
+        // Close sidebar on escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && sidebar.classList.contains("active")) {
+            closeSidebar();
+          }
+        });
+
+        // Handle window resize
+        window.addEventListener("resize", () => {
+          if (
+            window.innerWidth >= 992 &&
+            sidebar.classList.contains("active")
+          ) {
+            closeSidebar();
+          }
+        });
+
+        // Enhanced touch support for mobile
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener("touchstart", (e) => {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener("touchend", (e) => {
+          const touchEndX = e.changedTouches[0].clientX;
+          const touchEndY = e.changedTouches[0].clientY;
+          const diffX = touchStartX - touchEndX;
+          const diffY = touchStartY - touchEndY;
+
+          // Swipe right to open sidebar (from left edge)
+          if (touchStartX < 50 && diffX < -50 && Math.abs(diffY) < 100) {
+            openSidebar();
+          }
+
+          // Swipe left to close sidebar
+          if (
+            sidebar.classList.contains("active") &&
+            diffX > 50 &&
+            Math.abs(diffY) < 100
+          ) {
+            closeSidebar();
+          }
+        });
+      });
+
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.style.background = "rgba(0, 0, 0, 0.9)";
+        } else {
+          navbar.style.background = "rgba(0, 0, 0, 0.6)";
+        }
+      });
+
+      $(".exotic-journey-slider-track").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 5,
+        arrows: true,
+        dots: false,
+        prevArrow:
+          '<button type="button" class="slick-prev carousel-nav prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:
+          '<button type="button" class="slick-next carousel-nav next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "30px",
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "40px",
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: "20px",
+              arrows: false,
+            },
+          },
+        ],
+      });
+    </script>
+    <!-- <script>Rishu kumar</script> -->
+  </body>
+</html>

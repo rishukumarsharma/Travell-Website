@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical India Travels - Complete Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../sidebar_style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts for Aclonica -->
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top" >
+    <div class="container-fluid justify-content-between align-items-center">
+      <!-- Mobile Menu Button -->
+      <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Logo - Always Visible -->
+      <a class="navbar-brand left-logo mx-auto mx-lg-0" href="#">
+        <img src="/Image/magical logo.png" alt="Logo" height="40">
+      </a>
+
+      <!-- Desktop Navigation - Hidden on Mobile -->
+      <div class="d-none d-lg-flex align-items-center justify-content-between " style="width: 100%;">
+        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4">
+          <li class="nav-item">
+            <a class="nav-link contact-info" href="#"><i class="bi bi-whatsapp"></i> +91 9999 999 999</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Second Page/secondpage.html">DESTINATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Second Page/secondpage.html">EXPERIENCES</a>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-auto mx-lg-0" href="#">
+          <img src="/Image/magical logo.png" alt="Logo" height="40">
+        </a>
+        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/Third Page/index.html">PLANNER QUIZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">TOUR BY INTERESTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="btn btn-orange">Enquire Now</a>
+          </li>
+
+          <button style="display: block;" class="navbar-toggler " type="button" id="sidebarToggle2"
+            aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </ul>
+      </div>
+
+      <!-- Mobile Enquire Button -->
+      <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
+    </div>
+  </nav>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="/Image/magical logo.png" alt="Logo" height="35">
+      <button class="sidebar-close" id="sidebarClose">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-content">
+      <div class="sidebar-section">
+        <h6 class="sidebar-title">Contact</h6>
+        <a href="#" class="sidebar-link">
+          <i class="bi bi-whatsapp"></i>
+          <span>+91 9999 999 999</span>
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <h6 class="sidebar-title">Navigation</h6>
+        <a href="#destinations" class="sidebar-link">
+          <i class="bi bi-geo-alt"></i>
+          <span>Destinations</span>
+        </a>
+        <a href="#experiences" class="sidebar-link">
+          <i class="bi bi-star"></i>
+          <span>Experiences</span>
+        </a>
+        <a href="#planner" class="sidebar-link">
+          <i class="bi bi-clipboard-check"></i>
+          <span>Planner Quiz</span>
+        </a>
+        <a href="#interests" class="sidebar-link">
+          <i class="bi bi-heart"></i>
+          <span>Tour by Interests</span>
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <h6 class="sidebar-title">Quick Actions</h6>
+        <a href="#" class="sidebar-link">
+          <i class="bi bi-search"></i>
+          <span>Search Tours</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="bi bi-translate"></i>
+          <span>Language (EN)</span>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <a href="#contact" class="btn btn-orange w-100">
+          <i class="bi bi-envelope"></i>
+          Enquire Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container-fluid" style="margin-top: 140px;">
+      <div class="row align-items-end pt-4">
+        <div class="col-lg-6 mb-5 mb-lg-0 " style="padding-left: 50px;">
+          <h1 class="hero-heading loading">LIFELONG<br><span id="animated-text">EXPERIENCES</span><br>IN INDIA!</h1>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-cards-container" >
+            <div class="hero-cards-wrapper" id="heroCardsWrapper" style="overflow: hidden;">
+              <!-- Card 1 -->
+              <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Golden Triangle">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag blue-tag">KNOW OUR INDIA</span>
+                    <h5 class="modern-card-title">Golden Triangle</h5>
+                    <p class="modern-card-subtitle">DELHI, AGRA, JAIPUR</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Kerala">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag orange-tag">EDUCATIONAL</span>
+                    <h5 class="modern-card-title">Kerala Backwaters</h5>
+                    <p class="modern-card-subtitle">KOCHI, ALLEPPEY, KUMARAKOM</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Kerala">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag orange-tag">EDUCATIONAL</span>
+                    <h5 class="modern-card-title">Kerala Backwaters</h5>
+                    <p class="modern-card-subtitle">KOCHI, ALLEPPEY, KUMARAKOM</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Kerala">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag orange-tag">EDUCATIONAL</span>
+                    <h5 class="modern-card-title">Kerala Backwaters</h5>
+                    <p class="modern-card-subtitle">KOCHI, ALLEPPEY, KUMARAKOM</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Himalayas">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag green-tag">ADVENTURE</span>
+                    <h5 class="modern-card-title">Himalayan Trek</h5>
+                    <p class="modern-card-subtitle">MANALI, LEH, LADAKH</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="hero-card">
+                <div class="card modern-card loading">
+                  <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                    class="card-img-top modern-card-img" alt="Goa">
+                  <div class="card-body modern-card-body">
+                    <span class="modern-tag purple-tag">BEACHES</span>
+                    <h5 class="modern-card-title">Goa Paradise</h5>
+                    <p class="modern-card-subtitle">NORTH GOA, SOUTH GOA</p>
+                    <div class="modern-card-actions">
+                      <a href="#" class="btn-explore">Explore</a>
+                      <a href="#" class="btn-book-now">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation arrows at bottom -->
+            <div class="hero-nav-controls" style="position: relative; left: 50%; transform: translateX(-50%);">
+              <button class="hero-nav-arrow hero-nav-left" id="heroNavLeft">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="hero-nav-arrow hero-nav-right" id="heroNavRight">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Let's start with your interest section -->
+  <section class="content-section" id="interests">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <h2 class="fw-bold text-black loading">Let's start with your interests</h2>
+        <a href="#" class="text-primary fw-semibold text-decoration-none">View All</a>
+      </div>
+
+      <div class="row g-3">
+        <!-- Interest Cards -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('/Image/lets_start/Backpacker\ looking\ up\ to\ sky.png');">
+            <div class="interest-overlay">Wildlife Tour</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('/Image/lets_start/Boy\ giving\ a\ piggy\ back\ ride\ to\ his\ girlfriend.png');">
+            <div class="interest-overlay">Luxury</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+            <div class="interest-overlay">Spiritual</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+            <div class="interest-overlay">Adventure</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+            <div class="interest-overlay">Family</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="interest-card loading"
+            style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');">
+            <div class="interest-overlay">Honeymoon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Season is calling section -->
+  <section class="content-section" style="background-color: #ffffff; position: relative;" id="seasons">
+    <!-- Navigation Buttons - Outside Container -->
+    <button class="season-nav-btn season-prev" id="seasonPrev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="season-nav-btn season-next" id="seasonNext">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+    
+    <div class="container">
+      <!-- Heading -->
+      <h2 class="fw-bold text-dark  loading">Season is calling</h2>
+
+      <!-- Season Tabs -->
+      <div class="season-tabs d-flex mb-0">
+        <a href="#" class="active" data-season="summer">Summer</a>
+        <a href="#" data-season="monsoon">Monsoon</a>
+        <a href="#" data-season="winter">Winter</a>
+        <a href="#" data-season="spring">Spring</a>
+      </div>
+
+      <!-- Cards Container for Horizontal Scrolling -->
+      <div class="season-carousel-container p-0">
+        <div id="tourCarousel" class="season-cards-wrapper " style="overflow: hidden;">
+          <!-- All Tour Cards in a single scrollable container -->
+          <div class="season-card">
+            <div class="card p-3 card-custom loading">
+              <h5 class="mt-2 fw-bold">Golden Triangle</h5>
+              <small class="text-muted">DELHI, AGRA, JAIPUR</small>
+              <img
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Golden Triangle">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom loading">
+              <h5 class="mt-2 fw-bold">Kerala Backwaters</h5>
+              <small class="text-muted">KOCHI, ALLEPPEY, KUMARAKOM</small>
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Kerala">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom loading">
+              <h5 class="mt-2 fw-bold">Himalayan Retreat</h5>
+              <small class="text-muted">SHIMLA, MANALI, DHARAMSHALA</small>
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Himalayas">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom loading">
+              <h5 class="mt-2 fw-bold">Goa Beaches</h5>
+              <small class="text-muted">NORTH GOA, SOUTH GOA</small>
+              <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Goa">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Rajasthan Heritage</h5>
+              <small class="text-muted">JAIPUR, UDAIPUR, JODHPUR</small>
+              <img
+                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Rajasthan">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Ladakh Adventure</h5>
+              <small class="text-muted">LEH, NUBRA, PANGONG</small>
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Ladakh">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Tamil Nadu Temples</h5>
+              <small class="text-muted">CHENNAI, MADURAI, KANYAKUMARI</small>
+              <img
+                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Tamil Nadu">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Northeast Explorer</h5>
+              <small class="text-muted">SHILLONG, GUWAHATI, TEZPUR</small>
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Northeast">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Kashmir Valley</h5>
+              <small class="text-muted">SRINAGAR, GULMARG, PAHALGAM</small>
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Kashmir">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="season-card">
+            <div class="card p-3 card-custom">
+              <h5 class="mt-2 fw-bold">Andaman Islands</h5>
+              <small class="text-muted">PORT BLAIR, HAVELOCK, NEIL</small>
+              <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                class="img-fluid rounded mt-2" alt="Andaman">
+              <div class="d-flex justify-content-between mt-3">
+                <a href="#" class="text-primary fw-semibold text-decoration-none">Explore</a>
+                <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Festival Section -->
+  <section class="festival-section" id="festivals">
+    <div class="row g-0">
+      <!-- Left Panel -->
+      <div class="container col-lg-6 left-panel" style="padding: 50px;">
+        <div class="tag">TRAVEL INDIA BY FESTIVALS</div>
+        <div class="festival-list">
+          <h3 class="loading festival-item" data-festival="holi">→ Holi</h3>
+          <h3 class="loading festival-item" data-festival="diwali">Diwali</h3>
+          <h3 class="loading festival-item" data-festival="ganesh">Ganesh Chaturthi</h3>
+          <h3 class="loading festival-item" data-festival="dussehra">Dussehra</h3>
+          <h3 class="loading festival-item" data-festival="krishna">Krishna Janmashtami</h3>
+          <button class="btn btn-outline-primary mt-4" style="border-radius: 10px;">View All</button>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="col-lg-6 right-panel">
+        <div class="overlay-content">
+          <h2 class="loading">Celebrate Holi in Indian Style</h2>
+          <p>Vrindavan & Mathura, Uttar Pradesh</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="badge">5 Nights - 6 Days</span>
+            <a href="#" class="btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <!-- Hero Section -->
+      <div class="row align-items-center text-center text-lg-start mb-5">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <div class="hero-text loading">
+            THE REST OF YOUR<br>
+            <span>"HAPPILY EVER AFTER"</span><br>
+            STARTS WITH US
+          </div>
+          <p class="mt-3 text-muted">1-min quiz to suggest the best tours based on travel style, budget & season.</p>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <img src="/Image/plantrip.png" alt="">
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <!-- About Section -->
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <img src="/Image/magical logo.png" alt="Magical India Logo" class="logo mb-4 loading">
+          <div class="description">
+            <p class="loading"><strong>At Magical India Tour,</strong> travel has always been more than a passion it's a
+              way of life. From a young age, I was captivated by diverse cultures, traditions, and landscapes. This
+              passion led me to a career in tourism, not just to explore but to help others experience the magic of
+              India. With a deep love for my homeland, I am dedicated to curating unforgettable journeys that showcase
+              the beauty and richness of Incredible India to the world.</p>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">Learn more about us →</a>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0 ">
+          <div class="d-flex flex-column gap-4 text-center text-lg-start">
+            <div class="loading">
+              <div class="stats">20+</div>
+              <div class="subtext">Years of Expertise</div>
+            </div>
+            <div class="loading">
+              <div class="stats">500+</div>
+              <div class="subtext">Ready Itineraries</div>
+            </div>
+            <div class="loading">
+              <div class="stats">2.5K</div>
+              <div class="subtext">Customer served for</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="why-choose-section text-center" id="why-choose">
+    <div class="container">
+      <h2 class="fw-bold mb-5 loading">Why choose us?</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card card-custom h-100 loading">
+            <img
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150&q=80"
+              alt="Best Deal" class="card-img-top">
+            <div class="card-body card-body-custom">
+              <h5>Best Deal</h5>
+              <p>No delays, no stress. We offer quick responses, fast bookings, and smooth planning—so you can focus on
+                the fun part: getting excited about your trip!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-custom h-100 loading">
+            <img
+              src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150&q=80"
+              alt="Fast Services" class="card-img-top">
+            <div class="card-body card-body-custom">
+              <h5>Fast Services</h5>
+              <p>Your time matters. We offer fast responses, quick bookings, and smooth planning—perfect for last-minute
+                trips or well-planned holidays.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-custom h-100 loading">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150&q=80"
+              alt="Great Team" class="card-img-top">
+            <div class="card-body card-body-custom">
+              <h5>Great Team</h5>
+              <p>We move fast—from instant quotes to quick bookings. Planning is smooth, changes are easy, and stress
+                stays out of the picture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Carousel Section -->
+  <section id="travelCarousel" class="carousel slide carousel-container" data-bs-ride="carousel"
+    data-bs-interval="6000">
+    <div class="carousel-inner">
+      <!-- Main Slide -->
+      <div class="carousel-item active">
+        <div class="slide-wrapper">
+          <!-- Left Content -->
+          <div class="left-content">
+            <h1 class="main-title loading">
+              Where Every<br>
+              Interest Becomes<br>
+              an Adventure.
+            </h1>
+          </div>
+
+          <!-- Right Content -->
+          <div class="right-content">
+            <p class="description-text loading">
+              Whether you're seeking the thrill of wildlife safaris, the indulgence of luxury escapes, a
+              memorable family vacation, a romantic honeymoon getaway, a soulful spiritual retreat, or an
+              adrenaline-filled adventure, we have something designed just for you.
+            </p>
+          </div>
+
+          <!-- Traveler Image -->
+          <div class="traveler-section">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80"
+              alt="Traveler with map" class="traveler-image loading">
+          </div>
+
+          <!-- Spring Card -->
+          <div class="spring-card loading ">
+            <h3 class="spring-title">Best for<br>Spring</h3>
+            <p class="spring-subtitle">Itineraries for 10 Nights</p>
+            <button class="learn-more-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Slide -->
+      <div class="carousel-item">
+        <div class="slide-wrapper">
+          <div class="left-content">
+            <h1 class="main-title">
+              Discover Hidden<br>
+              Treasures Across<br>
+              the Globe.
+            </h1>
+          </div>
+
+          <div class="right-content">
+            <p class="description-text">
+              From ancient temples to pristine beaches, from bustling markets to serene mountains, explore
+              destinations that will leave you with memories to last a lifetime. Our curated experiences
+              bring you closer to authentic adventures.
+            </p>
+          </div>
+
+          <div class="traveler-section">
+            <img src="/Image/girl.png" alt="Adventure traveler" class="traveler-image">
+          </div>
+
+          <div class="spring-card">
+            <h3 class="spring-title">Best for<br>Summer</h3>
+            <p class="spring-subtitle">Itineraries for 14 Nights</p>
+            <button class="learn-more-btn">Explore Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Slide -->
+      <div class="carousel-item">
+        <div class="slide-wrapper">
+          <div class="left-content">
+            <h1 class="main-title">
+              Create Memories<br>
+              That Last<br>
+              a Lifetime.
+            </h1>
+          </div>
+
+          <div class="right-content">
+            <p class="description-text">
+              Join thousands of travelers who have transformed their wanderlust into unforgettable
+              journeys. With expert guides, premium accommodations, and carefully crafted itineraries,
+              your perfect adventure awaits.
+            </p>
+          </div>
+
+          <div class="traveler-section">
+            <img src="/Image/girl.png" alt="Cultural explorer" class="traveler-image">
+          </div>
+
+          <div class="spring-card">
+            <h3 class="spring-title">Best for<br>Winter</h3>
+            <p class="spring-subtitle">Itineraries for 7 Nights</p>
+            <button class="learn-more-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Bottom Scrolling Banner -->
+    <div class="bottom-banner">
+      <div class="banner-text">
+        INDIA EDUCATIONAL TRIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EUROPE CULTURAL TOUR
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ASIA ADVENTURE PACKAGE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AFRICA
+        SAFARI EXPERIENCE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Packages Section -->
+  <section class="packages-section" style="position: relative;" id="packages">
+    <!-- Navigation Buttons - Outside Container -->
+    <button class="season-nav-btn packages-prev" id="packagesPrev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="season-nav-btn packages-next" id="packagesNext">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+    
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="fw-bold mb-4 loading">Popular Packages</h2>
+          <div class="filter-tabs">
+            <div class="filter-tab active tabspop">✓ All</div>
+            <div class="filter-tab tabspop">Mountain</div>
+            <div class="filter-tab tabspop">Beaches</div>
+            <div class="filter-tab tabspop">Monuments</div>
+            <div class="filter-tab tabspop">Safari</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Packages Container -->
+      <div class="packages-carousel-container p-0">
+        <div class="packages-container" id="packagesContainer">
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Golden Triangle</h5>
+                  <div class="card-subtitle">Delhi, Agra, Jaipur</div>
+                </div>
+                <i class="fas fa-chevron-right "></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Taj Mahal">
+              <div class="duration-badge">06 DAYS / 05 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1200</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">September – April</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Rajasthan Royal</h5>
+                  <div class="card-subtitle">Jaipur, Udaipur, Jodhpur</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Rajasthan Palace">
+              <div class="duration-badge">10 DAYS / 09 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1800</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">November – February</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Himalayan Adventure</h5>
+                  <div class="card-subtitle">Manali, Leh, Ladakh</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Himalayas">
+              <div class="duration-badge">12 DAYS / 11 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$2200</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">May – September</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section" id="testimonials">
+    <div class="container">
+      <!-- Header Section -->
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <div class="testimonial-badge loading">TESTIMONIAL</div>
+          <h1 class="main-heading loading">What Our Travelers<br>Are Saying</h1>
+        </div>
+        <div class="col-lg-6 d-flex align-items-end">
+          <p class="description-text loading">
+            We craft unforgettable journeys across India with care and local expertise. From custom plans to personal
+            support, your experience is our passion.
+          </p>
+        </div>
+      </div>
+
+      <!-- Testimonial Content -->
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="/Image/more.png" alt="Peacock in natural habitat" class="testimonial-image loading">
+        </div>
+        <div class="col-lg-8">
+          <div class="ps-lg-4">
+            <div class="quote-mark loading">"</div>
+            <p class="testimonial-text loading">
+              Our trip to Himachal was absolutely amazing! The planning, accommodations, and local experiences were all
+              top-notch. The team was responsive and supportive throughout. Everything felt smooth and stress-free. We
+              explored hidden gems we'd never find on our own. Highly recommended for anyone looking to discover India
+              in a special way!
+            </p>
+
+            <div class="customer-info loading">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Ajay Sharma" class="customer-avatar">
+              <div>
+                <p class="customer-name">Ajay Sharma</p>
+                <p class="customer-time">2 days ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="pagination-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Blog Section -->
+  <section class="travel-blog-section" id="blog">
+    <div class="travel-section">
+      <div class="section-header">
+        <h1 class="section-title loading">Read the latest from<br>our travel tales!</h1>
+        <a href="#" class="view-all-link">View All</a>
+      </div>
+
+      <div class="cards-container " >
+        <div class="cards-wrapper" id="cardsWrapper" style="overflow: hidden;">
+          <div class="travel-card card-gorakhpur loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+              <p class="card-date">10 February, 2025</p>
+              <p class="card-description">Humayun's Tomb in Delhi is a stunning Mughal-era monument, known for its
+                Persian-style architecture, lush gardens, and historical grandeur.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+           <div class="travel-card card-lucknow loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+              <p class="card-date">10 February, 2025</p>
+              <p class="card-description">Humayun's Tomb in Delhi is a stunning Mughal-era monument, known for its
+                Persian-style architecture, lush gardens, and historical grandeur.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+           <div class="travel-card card-kolkata loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+              <p class="card-date">10 February, 2025</p>
+              <p class="card-description">Humayun's Tomb in Delhi is a stunning Mughal-era monument, known for its
+                Persian-style architecture, lush gardens, and historical grandeur.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+           <div class="travel-card card-delhi loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Humayun Tomb, New Delhi</h3>
+              <p class="card-date">10 February, 2025</p>
+              <p class="card-description">Humayun's Tomb in Delhi is a stunning Mughal-era monument, known for its
+                Persian-style architecture, lush gardens, and historical grandeur.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="travel-card card-mumbai loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Magical Mumbai</h3>
+              <p class="card-date">10 February, 2025</p>
+              <p class="card-description">Mumbai evenings are a magical blend of city lights. As the sun sets over
+                Marine Drive, locals and travelers gather to enjoy the cool air and scenic views.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="travel-card card-noida loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Rajasthan Royal Heritage</h3>
+              <p class="card-date">8 February, 2025</p>
+              <p class="card-description">Experience the royal grandeur of Rajasthan with its magnificent palaces,
+                vibrant culture, and desert landscapes that tell tales of ancient kingdoms.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="travel-card card-gurgaon loading">
+            <div class="share-icon">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Kerala Backwater Bliss</h3>
+              <p class="card-date">5 February, 2025</p>
+              <p class="card-description">Drift through the serene backwaters of Kerala on traditional houseboats,
+                surrounded by lush greenery and the gentle sounds of nature.</p>
+              <a href="#" class="continue-reading">
+                Continue Reading <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-controls">
+        <button class="nav-btn" id="prevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn" id="nextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer-section" id="contact">
+    <div class="footer-content">
+      <div class="container">
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+          <h2 class="loading">Receive Inspiration In Your Inbox</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+              <form id="newsletterForm" class="loading">
+                <div class="row g-3">
+                  <div class="col-md-4 col-sm-6">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstName" required>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastName" required>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <input type="email" class="form-control" placeholder="Email" name="email" required>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="emailConsent" required>
+                  <label class="form-check-label" for="emailConsent">
+                    I'm happy to receive emails from Magical India Travels
+                  </label>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destinations Section -->
+        <div class="destinations-section" id="destinations">
+          <h3 class="loading">DESTINATIONS</h3>
+          <div class="destination-links">
+            <a href="#ladakh" class="loading">Ladakh</a>
+            <a href="#lakshyadeep" class="loading">Lakshyadeep</a>
+            <a href="#kashmir" class="loading">Kashmir</a>
+            <a href="#andaman" class="loading">Andaman & Nicobar Island</a>
+            <a href="#uttrakhand" class="loading">Uttrakhand</a>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="logo-container">
+                <img src="/Image/magical logo.png" alt="Magical India Travels Logo" class="loading">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7">
+              <div class="contact-info loading">
+                <p><strong>IND:</strong> +91 2350983099</p>
+                <p><strong>Email:</strong> enquiry@gmail.com</p>
+                <p><strong>Address:</strong><br>
+                  Dwarka Mor, Near Lal Farm,<br>
+                  New Delhi 110059</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>&copy; 2025, All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./script.js"></script>
+</body>
+
+</html>

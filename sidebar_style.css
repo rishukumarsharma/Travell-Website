@@ -1,0 +1,712 @@
+.exotic-journey-main-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+  margin-top: -12rem;
+  z-index: 3;
+}
+
+.exotic-journey-slider-track {
+  margin: 0 auto;
+  padding: 40px 0;
+  margin-top: -22rem;
+}
+
+.exotic-journey-travel-item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.slick-center .exotic-journey-travel-item {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  z-index: 2;
+}
+
+.slick-slide {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.slick-center {
+  opacity: 1 !important;
+}
+
+.exotic-journey-slider-track .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.exotic-journey-slider-track .slick-current.slick-active .exotic-journey-info-panel {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.exotic-journey-slider-track .slick-current.slick-active .exotic-journey-info-panel .exotic-journey-place-summary {
+  display: block;
+}
+
+.exotic-journey-slider-track .slick-current.slick-active .exotic-journey-info-panel .exotic-journey-read-more-btn {
+  display: block;
+}
+
+.exotic-journey-slider-track .exotic-journey-travel-item {
+  margin: 0 10px;
+}
+
+.exotic-journey-travel-item.slick-slide.slick-current.slick-active.slick-center {
+  height: 400px;
+}
+
+.exotic-journey-travel-item.slick-slide {
+  height: 320px;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+  .exotic-journey-slider-track .exotic-journey-travel-item {
+    margin: 0 8px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  .exotic-journey-slider-track .exotic-journey-travel-item {
+    margin: 0 3px;
+  }
+}
+
+/* Default: all cards small */
+.exotic-journey-slider-track .exotic-journey-travel-item {
+  width: 220px;
+  /* height: 320px; */
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Center card: big */
+.slick-center .exotic-journey-travel-item {
+  width: 340px;
+  /* height: 480px; */
+  z-index: 2;
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 992px) {
+  .exotic-journey-slider-track .exotic-journey-travel-item {
+    width: 160px;
+    height: 220px;
+  }
+  .slick-center .exotic-journey-travel-item {
+    width: 240px;
+    height: 320px;
+  }
+} */
+
+/* .exotic-journey-slider-track .slick-slide .exotic-journey-info-panel {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+} */
+.exotic-journey-display-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  padding: 40px 0;
+}
+
+.exotic-journey-slider-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* padding: 0 60px; */
+}
+
+/* .exotic-journey-travel-item {
+          flex-shrink: 0;
+          width: 280px;
+          height: 350px;
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          opacity: 0.7;
+          transform: scale(0.85);
+        } */
+
+.exotic-journey-travel-item.exotic-journey-featured-item {
+  /* width: 380px; */
+  /* height: 480px; */
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.exotic-journey-photo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.exotic-journey-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.exotic-journey-travel-item:hover .exotic-journey-photo-container img {
+  transform: scale(1.05);
+}
+
+.exotic-journey-favorite-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.exotic-journey-favorite-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #e74c3c;
+  transform: scale(1.1);
+}
+
+.exotic-journey-info-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 40px 20px 20px;
+  color: white;
+  transform: translateY(20px);
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+
+/* .exotic-journey-travel-item.exotic-journey-featured-item .exotic-journey-info-panel {
+          transform: translateY(0);
+          opacity: 1;
+        } */
+
+.exotic-journey-rating-display {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.exotic-journey-rating-display i {
+  color: #ffd700;
+  font-size: 14px;
+}
+
+.exotic-journey-location-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.exotic-journey-place-summary {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  display: none;
+}
+
+.exotic-journey-read-more-btn {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  display: none;
+}
+
+.exotic-journey-read-more-btn:hover {
+  background: white;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+.exotic-journey-control-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exotic-journey-control-left {
+  left: 150px;
+}
+
+.exotic-journey-control-right {
+  right: 0px;
+}
+
+.exotic-journey-control-button:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.exotic-journey-control-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .exotic-journey-travel-item {
+    width: 250px;
+    height: 320px;
+  }
+
+  .exotic-journey-travel-item.exotic-journey-featured-item {
+    width: 340px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 992px) {
+  .exotic-journey-slider-track {
+    gap: 15px;
+    padding: 0 40px;
+    margin-top: -8rem;
+
+  }
+
+  .exotic-journey-travel-item {
+    width: 220px;
+    height: 300px;
+  }
+
+  .exotic-journey-travel-item.exotic-journey-featured-item {
+    width: 300px;
+    height: 400px;
+  }
+
+  .exotic-journey-control-button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exotic-journey-slider-track {
+    gap: 10px;
+    padding: 0 30px;
+    margin-top: -6rem;
+  }
+
+  .exotic-journey-travel-item {
+    width: 200px;
+    height: 280px;
+  }
+
+  .exotic-journey-travel-item.exotic-journey-featured-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .exotic-journey-location-title {
+    font-size: 18px;
+  }
+
+  .exotic-journey-featured-item .exotic-journey-location-title {
+    font-size: 22px;
+  }
+
+  .exotic-journey-control-left {
+    left: 10px;
+  }
+
+  .exotic-journey-control-right {
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .exotic-journey-slider-track {
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  .exotic-journey-travel-item {
+    width: 180px;
+    height: 260px;
+  }
+
+  .exotic-journey-travel-item.exotic-journey-featured-item {
+    width: 260px;
+    height: 360px;
+  }
+
+  .exotic-journey-info-panel {
+    padding: 30px 15px 15px;
+  }
+
+  .exotic-journey-location-title {
+    font-size: 16px;
+  }
+
+  .exotic-journey-featured-item .exotic-journey-location-title {
+    font-size: 20px;
+  }
+
+  .exotic-journey-place-summary {
+    font-size: 13px;
+  }
+
+  .exotic-journey-control-button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exotic-journey-travel-item {
+    width: 160px;
+    height: 240px;
+  }
+
+  .exotic-journey-travel-item.exotic-journey-featured-item {
+    width: 240px;
+    height: 340px;
+  }
+
+  .exotic-journey-slider-track {
+    gap: 5px;
+    padding: 0 15px;
+  }
+}
+
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4a90e2;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #4a90e2;
+  color: white;
+}
+
+.nav-btn i {
+  color: #4a90e2;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover i {
+  color: white;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Sidebar Styles */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1040;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  z-index: 1050;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+
+.sidebar-content {
+  padding: 0;
+}
+
+.sidebar-section {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.sidebar-title {
+  color: #ff6b35;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link:hover {
+  color: #ff6b35;
+  background: rgba(255, 107, 53, 0.1);
+  padding-left: 10px;
+  transform: translateX(5px);
+}
+
+.sidebar-link i {
+  width: 20px;
+  margin-right: 12px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.sidebar-link:hover i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.sidebar-footer {
+  padding: 20px;
+  margin-top: auto;
+}
+
+.sidebar-footer .btn {
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar-footer .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.left-logo {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    order: 2;
+  }
+
+  .left-logo {
+    display: block;
+  }
+
+  .navbar-toggler {
+    order: 1;
+  }
+
+  .btn-orange.btn-sm {
+    order: 3;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
+
+.sidebar.active .sidebar-link {
+  animation: slideInLeft 0.3s ease forwards;
+}
+
+.sidebar.active .sidebar-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.sidebar.active .sidebar-link:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.sidebar.active .sidebar-link:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.sidebar.active .sidebar-link:nth-child(4) {
+  animation-delay: 0.25s;
+}
+
+.sidebar.active .sidebar-link:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 576px) {
+  .sidebar {
+    width: 280px;
+    left: -280px;
+  }
+
+  .sidebar-header {
+    padding: 15px;
+  }
+
+  .sidebar-section {
+    padding: 15px;
+  }
+}
+
+.btn-orange {
+  background-color: #e6552e !important;
+  color: #fff !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-orange:hover {
+  background-color: #cf4723 !important;
+  color: #fff !important;
+  transform: translateY(-2px) !important;
+}
