@@ -1,3 +1,55 @@
+/* Testimonial Slider Styles */
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.testimonial-arrow {
+  background: #4338ca;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.testimonial-arrow.left {
+  margin-right: 10px;
+}
+.testimonial-arrow.right {
+  margin-left: 10px;
+}
+.testimonial-arrow:hover {
+  background: #1e3a8a;
+}
+.testimonial-slides {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+.testimonial-slide {
+  display: none;
+  animation: fadeIn 0.5s;
+}
+.testimonial-slide.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -1006,7 +1058,7 @@ body {
   margin-bottom: 20px;
   font-size: 1.3rem;
 }
-.why{
+.why {
   font-family: "Aclonica", sans-serif;
 }
 
@@ -1015,7 +1067,6 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
 
 /* Main Carousel Section */
 .carousel-container {
@@ -2591,30 +2642,30 @@ html {
   }
 
   .travel-card {
-  flex: 0 0 250px;
-  min-width: 250px;
-  max-width: 250px;
-  border-radius: 20px !important;
+    flex: 0 0 250px;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 20px !important;
 
-  .season-carousel-container {
-    padding: 0 50px;
+    .season-carousel-container {
+      padding: 0 50px;
+    }
+
+    .nav-btn {
+      width: 35px;
+      height: 35px;
+    }
+
+    .nav-btn i {
+      font-size: 14px;
+    }
   }
 
-  .nav-btn {
-    width: 35px;
-    height: 35px;
+  /* new css */
+  .fas {
+    color: orange;
   }
-
-  .nav-btn i {
-    font-size: 14px;
+  .tabspop {
+    background-color: rgb(244, 244, 255);
   }
-}
-
-/* new css */
-.fas {
-  color: orange;
-}
-.tabspop {
-  background-color: rgb(244, 244, 255);
-}
 }

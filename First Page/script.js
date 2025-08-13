@@ -1,3 +1,36 @@
+// Testimonial Slider Functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dots = document.querySelectorAll('#testimonialDots .dot');
+  const prevBtn = document.getElementById('testimonialPrev');
+  const nextBtn = document.getElementById('testimonialNext');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  }
+
+  if (prevBtn && nextBtn && slides.length > 0) {
+    prevBtn.addEventListener('click', () => {
+      let idx = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(idx);
+    });
+    nextBtn.addEventListener('click', () => {
+      let idx = (currentSlide + 1) % slides.length;
+      showSlide(idx);
+    });
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => showSlide(i));
+    });
+    showSlide(0);
+  }
+});
 
     // Add this JavaScript code to your existing <script> section
 
