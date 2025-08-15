@@ -37,7 +37,7 @@ body {
   line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.header_subtext{
+.header_subtext {
   font-family: "Aclonica", sans-serif;
   font-size: clamp(4rem, 6vw, 2rem);
 }
@@ -1829,104 +1829,104 @@ html {
 }
 
 .travel-destinations-wrapper {
-            padding: 40px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .destinations-header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-        
-        .destinations-main-title {
-            font-size: 2.5rem;
-            font-family: "Aclonica", sans-serif;
-            font-weight: 700;
-            color: #333;
-            margin: 0;
-        }
-        
-        .carousel-navigation-controls {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .carousel-arrow-button {
-            width: 50px;
-            height: 50px;
-            border: 2px solid #ddd;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .carousel-arrow-button:hover {
-            background: #ff6e1b;
-            border-color: #ff6e1b;
-            color: white;
-        }
-        
-        .travel-location-card {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            height: 250px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .travel-location-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .travel-location-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .location-name-badge {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            background: rgba(0, 123, 255, 0.9);
-            color: white;
-            padding: 8px 8px;
-            border-radius: 20px;
-            font-weight: 400;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .travel-location-card.featured-destination-large {
-            height: 520px;
-        }
-        
-        @media (max-width: 768px) {
-            .destinations-main-title {
-                font-size: 1.8rem;
-                font-family: "Aclonica", sans-serif;
-            }
-            
-            .travel-location-card,
-            .travel-location-card.featured-destination-large {
-                height: 200px;
-                margin-bottom: 15px;
-            }
-            
-            .carousel-navigation-controls {
-                display: none;
-            }
-        }
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.destinations-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.destinations-main-title {
+  font-size: 2.5rem;
+  font-family: "Aclonica", sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.carousel-navigation-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-arrow-button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-arrow-button:hover {
+  background: #ff6e1b;
+  border-color: #ff6e1b;
+  color: white;
+}
+
+.travel-location-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.travel-location-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-name-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 123, 255, 0.9);
+  color: white;
+  padding: 8px 8px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.travel-location-card.featured-destination-large {
+  height: 520px;
+}
+
+@media (max-width: 768px) {
+  .destinations-main-title {
+    font-size: 1.8rem;
+    font-family: "Aclonica", sans-serif;
+  }
+
+  .travel-location-card,
+  .travel-location-card.featured-destination-large {
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  .carousel-navigation-controls {
+    display: none;
+  }
+}
 
 @keyframes fadeInUp {
   from {
@@ -1975,7 +1975,6 @@ html {
     display: none;
   }
 }
-
 
 /* Festival Section */
 .festival-section {
@@ -2064,4 +2063,214 @@ html {
   padding: 8px 12px;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+
+/* galary */
+.adventure-photo-showcase-wrapper {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.adventure-gallery-title-header {
+  font-family: "Aclonica", sans-serif;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+.masonry-photo-grid-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.adventure-image-tile {
+  position: absolute;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-image-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-image-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Specific positioning and sizing for each image */
+.adventure-tile-position-1 {
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 200px;
+}
+
+.adventure-tile-position-2 {
+  top: 0;
+  left: 300px;
+  width: 260px;
+  height: 180px;
+}
+
+.adventure-tile-position-3 {
+  top: 200px;
+  left: 300px;
+  width: 260px;
+  height: 200px;
+}
+
+.adventure-tile-position-4 {
+  top: 0;
+  right: 280px;
+  width: 280px;
+  height: 420px;
+}
+
+.adventure-tile-position-5 {
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 180px;
+}
+
+.adventure-tile-position-6 {
+  top: 200px;
+  right: 0;
+  width: 260px;
+  height: 200px;
+}
+
+.adventure-tile-position-7 {
+  top: 220px;
+  left: 0;
+  width: 280px;
+  height: 180px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .masonry-photo-grid-container {
+    max-width: 900px;
+  }
+
+  .adventure-tile-position-1 {
+    width: 220px;
+    height: 160px;
+  }
+  .adventure-tile-position-2 {
+    left: 240px;
+    width: 200px;
+    height: 140px;
+  }
+  .adventure-tile-position-3 {
+    top: 160px;
+    left: 240px;
+    width: 200px;
+    height: 160px;
+  }
+  .adventure-tile-position-4 {
+    right: 220px;
+    width: 220px;
+    height: 340px;
+  }
+  .adventure-tile-position-5 {
+    width: 200px;
+    height: 140px;
+  }
+  .adventure-tile-position-6 {
+    top: 160px;
+    width: 200px;
+    height: 160px;
+  }
+  .adventure-tile-position-7 {
+    top: 180px;
+    width: 220px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 991px) {
+  .masonry-photo-grid-container {
+    position: static;
+    max-width: 100%;
+  }
+
+  .adventure-image-tile {
+    position: static;
+    margin-bottom: 20px;
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .adventure-gallery-title-header {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .adventure-gallery-title-header {
+    font-size: 1.8rem;
+  }
+
+  .adventure-image-tile {
+    height: 200px !important;
+    border-radius: 15px;
+  }
+}
+
+/* Gallery container height for desktop */
+@media (min-width: 992px) {
+  .masonry-photo-grid-container {
+    height: 420px;
+  }
+}
+
+/* Lightbox overlay */
+.adventure-photo-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.adventure-photo-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.adventure-photo-modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.adventure-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }

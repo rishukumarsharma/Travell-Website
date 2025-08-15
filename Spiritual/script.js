@@ -970,3 +970,52 @@ document.addEventListener('DOMContentLoaded', () => {
         firstFestival.innerHTML = '→ ' + firstFestival.innerHTML;
       }
     }
+
+
+    // Galary Sectinn
+     function openAdventurePhotoModal(element) {
+            const img = element.querySelector('img');
+            const modalOverlay = document.getElementById('adventurePhotoModalOverlay');
+            const modalImage = document.getElementById('adventurePhotoModalImage');
+            
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
+            modalOverlay.style.display = 'block';
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+            
+            // Prevent event bubbling
+            event.stopPropagation();
+        }
+        
+        function closeAdventurePhotoModal() {
+            const modalOverlay = document.getElementById('adventurePhotoModalOverlay');
+            modalOverlay.style.display = 'none';
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeAdventurePhotoModal();
+            }
+        });
+        
+        // Add smooth loading animation for adventure tiles
+        document.addEventListener('DOMContentLoaded', function() {
+            const adventureTiles = document.querySelectorAll('.adventure-image-tile');
+            
+            adventureTiles.forEach((tile, index) => {
+                tile.style.opacity = '0';
+                tile.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    tile.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    tile.style.opacity = '1';
+                    tile.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });

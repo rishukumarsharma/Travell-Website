@@ -171,7 +171,6 @@
       <div
         class="container d-flex flex-column justify-content-center align-items-center h-100"
       >
-
         <!-- Left column -->
         <div class="container col-lg-6">
           <h1 class="hero-heading loading">SPORITUAL</h1>
@@ -188,314 +187,435 @@
       </div>
     </section>
 
-
-
-
     <!-- Top Destination -->
-      <div class="travel-destinations-wrapper">
-        <div class="container">
-            <div class="destinations-header-container">
-                <h2 class="destinations-main-title">TOP Destinations</h2>
-                <div class="carousel-navigation-controls">
-                    <div class="carousel-arrow-button" onclick="navigateDestinationsCarousel('left')">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div class="carousel-arrow-button" onclick="navigateDestinationsCarousel('right')">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
+    <div class="travel-destinations-wrapper">
+      <div class="container">
+        <div class="destinations-header-container">
+          <h2 class="destinations-main-title">TOP Destinations</h2>
+          <div class="carousel-navigation-controls">
+            <div
+              class="carousel-arrow-button"
+              onclick="navigateDestinationsCarousel('left')"
+            >
+              <i class="fas fa-chevron-left"></i>
             </div>
-            
-            <div class="row g-3" id="destinations-grid-container">
-                <!-- Jaipur Card -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="travel-location-card featured-destination-large">
-                        <img src="/Image/spiritual/unsplash_6rDbvXzIVpQ.jpg" alt="Jaipur">
-                        <div class="location-name-badge">JAIPUR, RAJASTHAN</div>
-                    </div>
-                </div>
-                
-                <!-- Right Column -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="row g-3 h-100">
-                        <!-- Goa Card -->
-                        <div class="col-12">
-                            <div class="travel-location-card">
-                                <img src="/Image/spiritual/unsplash_29ezCWtMtnM.jpg" alt="Goa">
-                                <div class="location-name-badge">GOA</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Bottom Row -->
-                        <div class="col-sm-6">
-                            <div class="travel-location-card">
-                                <img src="/Image/spiritual/unsplash_FYos6AbcDsY.jpg" alt="Kerala">
-                                <div class="location-name-badge">KERALA</div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <div class="travel-location-card">
-                                <img src="/Image/spiritual/unsplash_PKHwl4CK7j8.jpg" alt="Shimla">
-                                <div class="location-name-badge">SHIMLA & MANALI HIMACHAL PRADESH</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-      <!-- Popular Packages Section -->
-  <section class="packages-section" style="position: relative;" id="packages">
-    <!-- Navigation Buttons - Outside Container -->
-    <button class="season-nav-btn packages-prev" id="packagesPrev">
-      <i class="bi bi-chevron-left"></i>
-    </button>
-    <button class="season-nav-btn packages-next" id="packagesNext">
-      <i class="bi bi-chevron-right"></i>
-    </button>
-    
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-12">
-          <h2 class="fw-bold mb-4 loading">Popular Packages</h2>
-          <div class="filter-tabs">
-            <div class="filter-tab active tabspop">✓ All</div>
-            <div class="filter-tab tabspop">Mountain</div>
-            <div class="filter-tab tabspop">Beaches</div>
-            <div class="filter-tab tabspop">Monuments</div>
-            <div class="filter-tab tabspop">Safari</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Popular Packages Container -->
-      <div class="packages-carousel-container p-0">
-        <div class="packages-container" id="packagesContainer">
-          <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Golden Triangle</h5>
-                  <div class="card-subtitle">Delhi, Agra, Jaipur</div>
-                </div>
-                <i class="fas fa-chevron-right "></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Taj Mahal">
-              <div class="duration-badge">06 DAYS / 05 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1200</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">September – April</div>
-              <button class="btn btn-orange btn-sm">Book Now</button>
-            </div>
-          </div>
-
-          <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Kerala Backwaters</h5>
-                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Kerala Backwaters">
-              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1500</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">October – March</div>
-              <button class="btn btn-orange w-100">Book Now</button>
-            </div>
-          </div>
-           <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Kerala Backwaters</h5>
-                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Kerala Backwaters">
-              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1500</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">October – March</div>
-              <button class="btn btn-orange w-100">Book Now</button>
-            </div>
-          </div>
-           <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Kerala Backwaters</h5>
-                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Kerala Backwaters">
-              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1500</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">October – March</div>
-              <button class="btn btn-orange w-100">Book Now</button>
-            </div>
-          </div>
-           <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Kerala Backwaters</h5>
-                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Kerala Backwaters">
-              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1500</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">October – March</div>
-              <button class="btn btn-orange w-100">Book Now</button>
-            </div>
-          </div>
-
-          <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Rajasthan Royal</h5>
-                  <div class="card-subtitle">Jaipur, Udaipur, Jodhpur</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Rajasthan Palace">
-              <div class="duration-badge">10 DAYS / 09 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$1800</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">November – February</div>
-              <button class="btn btn-orange w-100">Book Now</button>
-            </div>
-          </div>
-
-          <div class="package-card loading">
-            <div class="card-header-custom">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <h5 class="mb-1">Himalayan Adventure</h5>
-                  <div class="card-subtitle">Manali, Leh, Ladakh</div>
-                </div>
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </div>
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Himalayas">
-              <div class="duration-badge">12 DAYS / 11 NIGHTS</div>
-              <div class="price-badge">
-                Starting at <span class="price">$2200</span>
-              </div>
-            </div>
-            <div class="card-footer-custom">
-              <div class="season-info">May – September</div>
-              <button class="btn btn-orange w-100">Book Now</button>
+            <div
+              class="carousel-arrow-button"
+              onclick="navigateDestinationsCarousel('right')"
+            >
+              <i class="fas fa-chevron-right"></i>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="pagination-dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </div>
-  </section>
+        <div class="row g-3" id="destinations-grid-container">
+          <!-- Jaipur Card -->
+          <div class="col-lg-6 col-md-6">
+            <div class="travel-location-card featured-destination-large">
+              <img
+                src="/Image/spiritual/unsplash_6rDbvXzIVpQ.jpg"
+                alt="Jaipur"
+              />
+              <div class="location-name-badge">JAIPUR, RAJASTHAN</div>
+            </div>
+          </div>
 
-   <!-- Festival Section -->
-  <section class="festival-section" id="festivals">
-    <div class="row g-0">
-      <!-- Left Panel -->
-      <div class="container col-lg-6 left-panel" style="padding: 50px;">
-        <div class="tag">TRAVEL INDIA BY FESTIVALS</div>
-        <div class="festival-list">
-          <h3 class="loading festival-item" data-festival="holi">→ Holi</h3>
-          <h3 class="loading festival-item" data-festival="diwali">Diwali</h3>
-          <h3 class="loading festival-item" data-festival="ganesh">Ganesh Chaturthi</h3>
-          <h3 class="loading festival-item" data-festival="dussehra">Dussehra</h3>
-          <h3 class="loading festival-item" data-festival="krishna">Krishna Janmashtami</h3>
-          <button class="btn btn-outline-primary mt-4" style="border-radius: 10px;">View All</button>
-        </div>
-      </div>
+          <!-- Right Column -->
+          <div class="col-lg-6 col-md-6">
+            <div class="row g-3 h-100">
+              <!-- Goa Card -->
+              <div class="col-12">
+                <div class="travel-location-card">
+                  <img
+                    src="/Image/spiritual/unsplash_29ezCWtMtnM.jpg"
+                    alt="Goa"
+                  />
+                  <div class="location-name-badge">GOA</div>
+                </div>
+              </div>
 
-      <!-- Right Panel -->
-      <div class="col-lg-6 right-panel">
-        <div class="overlay-content">
-          <h2 class="loading">Celebrate Holi in Indian Style</h2>
-          <p>Vrindavan & Mathura, Uttar Pradesh</p>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <span class="badge">5 Nights - 6 Days</span>
-            <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+              <!-- Bottom Row -->
+              <div class="col-sm-6">
+                <div class="travel-location-card">
+                  <img
+                    src="/Image/spiritual/unsplash_FYos6AbcDsY.jpg"
+                    alt="Kerala"
+                  />
+                  <div class="location-name-badge">KERALA</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="travel-location-card">
+                  <img
+                    src="/Image/spiritual/unsplash_PKHwl4CK7j8.jpg"
+                    alt="Shimla"
+                  />
+                  <div class="location-name-badge">
+                    SHIMLA & MANALI HIMACHAL PRADESH
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
+    <!-- Popular Packages Section -->
+    <section class="packages-section" style="position: relative" id="packages">
+      <!-- Navigation Buttons - Outside Container -->
+      <button class="season-nav-btn packages-prev" id="packagesPrev">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="season-nav-btn packages-next" id="packagesNext">
+        <i class="bi bi-chevron-right"></i>
+      </button>
 
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2 class="fw-bold mb-4 loading">Popular Packages</h2>
+            <div class="filter-tabs">
+              <div class="filter-tab active tabspop">✓ All</div>
+              <div class="filter-tab tabspop">Mountain</div>
+              <div class="filter-tab tabspop">Beaches</div>
+              <div class="filter-tab tabspop">Monuments</div>
+              <div class="filter-tab tabspop">Safari</div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Popular Packages Container -->
+        <div class="packages-carousel-container p-0">
+          <div class="packages-container" id="packagesContainer">
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Golden Triangle</h5>
+                    <div class="card-subtitle">Delhi, Agra, Jaipur</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Taj Mahal"
+                />
+                <div class="duration-badge">06 DAYS / 05 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1200</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">September – April</div>
+                <button class="btn btn-orange btn-sm">Book Now</button>
+              </div>
+            </div>
 
-    <!-- card section 82 packeges close -->
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Kerala Backwaters</h5>
+                    <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Kerala Backwaters"
+                />
+                <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1500</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">October – March</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Kerala Backwaters</h5>
+                    <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Kerala Backwaters"
+                />
+                <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1500</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">October – March</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Kerala Backwaters</h5>
+                    <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Kerala Backwaters"
+                />
+                <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1500</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">October – March</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Kerala Backwaters</h5>
+                    <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Kerala Backwaters"
+                />
+                <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1500</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">October – March</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Rajasthan Royal</h5>
+                    <div class="card-subtitle">Jaipur, Udaipur, Jodhpur</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Rajasthan Palace"
+                />
+                <div class="duration-badge">10 DAYS / 09 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$1800</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">November – February</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+
+            <div class="package-card loading">
+              <div class="card-header-custom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1">Himalayan Adventure</h5>
+                    <div class="card-subtitle">Manali, Leh, Ladakh</div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  alt="Himalayas"
+                />
+                <div class="duration-badge">12 DAYS / 11 NIGHTS</div>
+                <div class="price-badge">
+                  Starting at <span class="price">$2200</span>
+                </div>
+              </div>
+              <div class="card-footer-custom">
+                <div class="season-info">May – September</div>
+                <button class="btn btn-orange w-100">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Festival Section -->
+    <section class="festival-section" id="festivals">
+      <div class="row g-0">
+        <!-- Left Panel -->
+        <div class="container col-lg-6 left-panel" style="padding: 50px">
+          <div class="tag">TRAVEL INDIA BY FESTIVALS</div>
+          <div class="festival-list">
+            <h3 class="loading festival-item" data-festival="holi">→ Holi</h3>
+            <h3 class="loading festival-item" data-festival="diwali">Diwali</h3>
+            <h3 class="loading festival-item" data-festival="ganesh">
+              Ganesh Chaturthi
+            </h3>
+            <h3 class="loading festival-item" data-festival="dussehra">
+              Dussehra
+            </h3>
+            <h3 class="loading festival-item" data-festival="krishna">
+              Krishna Janmashtami
+            </h3>
+            <button
+              class="btn btn-outline-primary mt-4"
+              style="border-radius: 10px"
+            >
+              View All
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="col-lg-6 right-panel">
+          <div class="overlay-content">
+            <h2 class="loading">Celebrate Holi in Indian Style</h2>
+            <p>Vrindavan & Mathura, Uttar Pradesh</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge">5 Nights - 6 Days</span>
+              <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galary section -->
+    <div class="adventure-photo-showcase-wrapper">
+      <div class="container-fluid">
+        <h2 class="adventure-gallery-title-header">Recent Gallery</h2>
+
+        <div class="masonry-photo-grid-container">
+          <!-- Adventure Image Tile 1 - Adventure Cup -->
+          <div
+            class="adventure-image-tile adventure-tile-position-1"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_8mCMQSq41gQ.jpg"
+              alt="Adventure Cup"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 2 - Hiker with Backpack -->
+          <div
+            class="adventure-image-tile adventure-tile-position-2"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash__w91AeBEwak.jpg"
+              alt="Hiker"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 3 - Tree Swing -->
+          <div
+            class="adventure-image-tile adventure-tile-position-3"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_IibRZfGCM10.jpg"
+              alt="Tree Swing"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 4 - Waterfall (Large Center) -->
+          <div
+            class="adventure-image-tile adventure-tile-position-4"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_8--kuxbxuKU.jpg"
+              alt="Waterfall Adventure"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 5 - Forest Hikers -->
+          <div
+            class="adventure-image-tile adventure-tile-position-5"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_Spdu7YT1O00.jpg"
+              alt="Forest Hikers"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 6 - Kayaking -->
+          <div
+            class="adventure-image-tile adventure-tile-position-6"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_osDUe-m4ZcY.jpg"
+              alt="Kayaking"
+            />
+          </div>
+
+          <!-- Adventure Image Tile 7 - Rock Climbing -->
+          <div
+            class="adventure-image-tile adventure-tile-position-7"
+            onclick="openAdventurePhotoModal(this)"
+          >
+            <img
+              src="/Image/Recent_Galary/unsplash_Spdu7YT1O00.jpg"
+              alt="Rock Climbing"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Modal Overlay -->
+    <div
+      class="adventure-photo-modal-overlay"
+      id="adventurePhotoModalOverlay"
+      onclick="closeAdventurePhotoModal()"
+    >
+      <span class="adventure-modal-close-btn">&times;</span>
+      <div class="adventure-photo-modal-content">
+        <img id="adventurePhotoModalImage" src="" alt="" />
+      </div>
+    </div>
 
     <!-- Testimonial Section -->
     <section class="testimonial-section" id="testimonials">
@@ -562,8 +682,6 @@
         </div>
       </div>
     </section>
-
- 
 
     <!-- Footer -->
     <footer class="footer-section" id="contact">
