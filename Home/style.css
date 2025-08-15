@@ -1071,13 +1071,7 @@ body {
 /* Main Carousel Section */
 .carousel-container {
   height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #e0f2f1 0%,
-    #b2dfdb 30%,
-    #80cbc4 70%,
-    #4db6ac 100%
-  );
+  background-color: #C9E8F3;
   position: relative;
   overflow: hidden;
 }
