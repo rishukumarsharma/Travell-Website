@@ -333,6 +333,14 @@ function scrollPackages(direction) {
     }
 }
 
+// --- Fix: Add event listeners for Popular Packages arrows ---
+document.addEventListener('DOMContentLoaded', function () {
+    const prev = document.getElementById('packagesPrev');
+    const next = document.getElementById('packagesNext');
+    if (prev) prev.addEventListener('click', function () { scrollPackages(-1); });
+    if (next) next.addEventListener('click', function () { scrollPackages(1); });
+});
+
 // Book button functionality
 document.querySelectorAll('.btn-orange').forEach(btn => {
     if (btn.textContent.includes('Book Now')) {

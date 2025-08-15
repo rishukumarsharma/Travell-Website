@@ -813,6 +813,63 @@ body {
 .packages-section {
   padding: 80px 0;
   background: #fff;
+  position: relative;
+}
+
+/* Popular Packages Carousel Arrow Buttons */
+.season-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #fff;
+  border: 2px solid #e6552e;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: #e6552e;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  opacity: 0.9;
+}
+.season-nav-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+.season-nav-btn:hover,
+.season-nav-btn:focus {
+  background: #e6552e;
+  color: #fff;
+  border-color: #e6552e;
+  outline: none;
+}
+.packages-prev {
+  left: 10px;
+}
+.packages-next {
+  right: 10px;
+}
+.btn-orange {
+  background-color: #e6552e;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-orange {
+  background-color: #e6552e !important;
+  color: #fff !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-orange:hover {
+  background-color: #cf4723 !important;
+  color: #fff !important;
+  transform: translateY(-2px) !important;
 }
 
 .packages-container {
