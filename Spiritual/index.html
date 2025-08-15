@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magical India Travels - Complete Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../sidebar_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts for Aclonica -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
+      <div class="container-fluid justify-content-between align-items-center">
+        <!-- Mobile Menu Button -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          id="sidebarToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <!-- Logo - Always Visible -->
+        <a class="navbar-brand left-logo mx-auto mx-lg-0" href="#">
+          <img src="/Image/magical logo.png" alt="Logo" height="40" />
+        </a>
+
+        <!-- Desktop Navigation - Hidden on Mobile -->
+        <div
+          class="d-none d-lg-flex align-items-center justify-content-between"
+          style="width: 100%"
+        >
+          <ul
+            class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link contact-info" href="#"
+                ><i class="bi bi-whatsapp"></i> +91 9999 999 999</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >DESTINATIONS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >EXPERIENCES</a
+              >
+            </li>
+          </ul>
+          <a class="navbar-brand mx-auto mx-lg-0" href="#">
+            <img src="/Image/magical logo.png" alt="Logo" height="40" />
+          </a>
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Third Page/index.html">PLANNER QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">TOUR BY INTERESTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="btn btn-orange">Enquire Now</a>
+            </li>
+
+            <button
+              style="display: block"
+              class="navbar-toggler"
+              type="button"
+              id="sidebarToggle2"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </ul>
+        </div>
+
+        <!-- Mobile Enquire Button -->
+        <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
+      </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="/Image/magical logo.png" alt="Logo" height="35" />
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Contact</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-whatsapp"></i>
+            <span>+91 9999 999 999</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Navigation</h6>
+          <a href="#destinations" class="sidebar-link">
+            <i class="bi bi-geo-alt"></i>
+            <span>Destinations</span>
+          </a>
+          <a href="#experiences" class="sidebar-link">
+            <i class="bi bi-star"></i>
+            <span>Experiences</span>
+          </a>
+          <a href="#planner" class="sidebar-link">
+            <i class="bi bi-clipboard-check"></i>
+            <span>Planner Quiz</span>
+          </a>
+          <a href="#interests" class="sidebar-link">
+            <i class="bi bi-heart"></i>
+            <span>Tour by Interests</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Quick Actions</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-search"></i>
+            <span>Search Tours</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-translate"></i>
+            <span>Language (EN)</span>
+          </a>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="#contact" class="btn btn-orange w-100">
+            <i class="bi bi-envelope"></i>
+            Enquire Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center h-100"
+      >
+
+        <!-- Left column -->
+        <div class="container col-lg-6">
+          <h1 class="hero-heading loading">SPORITUAL</h1>
+        </div>
+        <!-- Right column -->
+        <div class="container col-lg-6">
+          <div class="row g-4">
+            <div class="header_subtext col-12 text-center text-lg-center">
+              <h1 class="header_paragraph">The Spiritual Side of India</h1>
+              <a href="#contact" class="btn btn-orange mt-3">Book Your Tour</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Top Destination -->
+      <div class="travel-destinations-wrapper">
+        <div class="container">
+            <div class="destinations-header-container">
+                <h2 class="destinations-main-title">TOP Destinations</h2>
+                <div class="carousel-navigation-controls">
+                    <div class="carousel-arrow-button" onclick="navigateDestinationsCarousel('left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="carousel-arrow-button" onclick="navigateDestinationsCarousel('right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-3" id="destinations-grid-container">
+                <!-- Jaipur Card -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="travel-location-card featured-destination-large">
+                        <img src="/Image/spiritual/unsplash_6rDbvXzIVpQ.jpg" alt="Jaipur">
+                        <div class="location-name-badge">JAIPUR, RAJASTHAN</div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="row g-3 h-100">
+                        <!-- Goa Card -->
+                        <div class="col-12">
+                            <div class="travel-location-card">
+                                <img src="/Image/spiritual/unsplash_29ezCWtMtnM.jpg" alt="Goa">
+                                <div class="location-name-badge">GOA</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bottom Row -->
+                        <div class="col-sm-6">
+                            <div class="travel-location-card">
+                                <img src="/Image/spiritual/unsplash_FYos6AbcDsY.jpg" alt="Kerala">
+                                <div class="location-name-badge">KERALA</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <div class="travel-location-card">
+                                <img src="/Image/spiritual/unsplash_PKHwl4CK7j8.jpg" alt="Shimla">
+                                <div class="location-name-badge">SHIMLA & MANALI HIMACHAL PRADESH</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+      <!-- Popular Packages Section -->
+  <section class="packages-section" style="position: relative;" id="packages">
+    <!-- Navigation Buttons - Outside Container -->
+    <button class="season-nav-btn packages-prev" id="packagesPrev">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button class="season-nav-btn packages-next" id="packagesNext">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+    
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="fw-bold mb-4 loading">Popular Packages</h2>
+          <div class="filter-tabs">
+            <div class="filter-tab active tabspop">✓ All</div>
+            <div class="filter-tab tabspop">Mountain</div>
+            <div class="filter-tab tabspop">Beaches</div>
+            <div class="filter-tab tabspop">Monuments</div>
+            <div class="filter-tab tabspop">Safari</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular Packages Container -->
+      <div class="packages-carousel-container p-0">
+        <div class="packages-container" id="packagesContainer">
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Golden Triangle</h5>
+                  <div class="card-subtitle">Delhi, Agra, Jaipur</div>
+                </div>
+                <i class="fas fa-chevron-right "></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Taj Mahal">
+              <div class="duration-badge">06 DAYS / 05 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1200</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">September – April</div>
+              <button class="btn btn-orange btn-sm">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+           <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Kerala Backwaters</h5>
+                  <div class="card-subtitle">Kochi, Alleppey, Kumarakom</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Kerala Backwaters">
+              <div class="duration-badge">08 DAYS / 07 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1500</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">October – March</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Rajasthan Royal</h5>
+                  <div class="card-subtitle">Jaipur, Udaipur, Jodhpur</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Rajasthan Palace">
+              <div class="duration-badge">10 DAYS / 09 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$1800</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">November – February</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+
+          <div class="package-card loading">
+            <div class="card-header-custom">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1">Himalayan Adventure</h5>
+                  <div class="card-subtitle">Manali, Leh, Ladakh</div>
+                </div>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Himalayas">
+              <div class="duration-badge">12 DAYS / 11 NIGHTS</div>
+              <div class="price-badge">
+                Starting at <span class="price">$2200</span>
+              </div>
+            </div>
+            <div class="card-footer-custom">
+              <div class="season-info">May – September</div>
+              <button class="btn btn-orange w-100">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Festival Section -->
+  <section class="festival-section" id="festivals">
+    <div class="row g-0">
+      <!-- Left Panel -->
+      <div class="container col-lg-6 left-panel" style="padding: 50px;">
+        <div class="tag">TRAVEL INDIA BY FESTIVALS</div>
+        <div class="festival-list">
+          <h3 class="loading festival-item" data-festival="holi">→ Holi</h3>
+          <h3 class="loading festival-item" data-festival="diwali">Diwali</h3>
+          <h3 class="loading festival-item" data-festival="ganesh">Ganesh Chaturthi</h3>
+          <h3 class="loading festival-item" data-festival="dussehra">Dussehra</h3>
+          <h3 class="loading festival-item" data-festival="krishna">Krishna Janmashtami</h3>
+          <button class="btn btn-outline-primary mt-4" style="border-radius: 10px;">View All</button>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="col-lg-6 right-panel">
+        <div class="overlay-content">
+          <h2 class="loading">Celebrate Holi in Indian Style</h2>
+          <p>Vrindavan & Mathura, Uttar Pradesh</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="badge">5 Nights - 6 Days</span>
+            <a href="#" class="btn btn-orange btn-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- card section 82 packeges close -->
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section" id="testimonials">
+      <div class="container">
+        <!-- Header Section -->
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <div class="testimonial-badge loading">TESTIMONIAL</div>
+            <h1 class="main-heading loading">
+              What Our Travelers<br />Are Saying
+            </h1>
+          </div>
+          <div class="col-lg-6 d-flex align-items-end">
+            <p class="description-text loading">
+              We craft unforgettable journeys across India with care and local
+              expertise. From custom plans to personal support, your experience
+              is our passion.
+            </p>
+          </div>
+          <!-- Testimonial Content -->
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img
+              src="/Image/more.png"
+              alt="Peacock in natural habitat"
+              class="testimonial-image loading"
+            />
+          </div>
+          <div class="col-lg-8">
+            <div class="ps-lg-4">
+              <div class="quote-mark loading">"</div>
+              <p class="testimonial-text loading">
+                Our trip to Himachal was absolutely amazing! The planning,
+                accommodations, and local experiences were all top-notch. The
+                team was responsive and supportive throughout. Everything felt
+                smooth and stress-free. We explored hidden gems we'd never find
+                on our own. Highly recommended for anyone looking to discover
+                India in a special way!
+              </p>
+
+              <div class="customer-info loading">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80"
+                  alt="Ajay Sharma"
+                  class="customer-avatar"
+                />
+                <div>
+                  <p class="customer-name">Ajay Sharma</p>
+                  <p class="customer-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="pagination-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-content">
+        <div class="container">
+          <!-- Newsletter Section -->
+          <div class="newsletter-section">
+            <h2 class="loading">Receive Inspiration In Your Inbox</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-8">
+                <form id="newsletterForm" class="loading">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailConsent"
+                      required
+                    />
+                    <label class="form-check-label" for="emailConsent">
+                      I'm happy to receive emails from Magical India Travels
+                    </label>
+                  </div>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destinations Section -->
+          <div class="destinations-section" id="destinations">
+            <h3 class="loading">DESTINATIONS</h3>
+            <div class="destination-links">
+              <a href="#ladakh" class="loading">Ladakh</a>
+              <a href="#lakshyadeep" class="loading">Lakshyadeep</a>
+              <a href="#kashmir" class="loading">Kashmir</a>
+              <a href="#andaman" class="loading">Andaman & Nicobar Island</a>
+              <a href="#uttrakhand" class="loading">Uttrakhand</a>
+            </div>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="logo-container">
+                  <img
+                    src="/Image/magical logo.png"
+                    alt="Magical India Travels Logo"
+                    class="loading"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="contact-info loading">
+                  <p><strong>IND:</strong> +91 2350983099</p>
+                  <p><strong>Email:</strong> enquiry@gmail.com</p>
+                  <p>
+                    <strong>Address:</strong><br />
+                    Dwarka Mor, Near Lal Farm,<br />
+                    New Delhi 110059
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="copyright">
+              <p>&copy; 2025, All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2067 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation */
+/* Add these CSS rules to your existing <style> section */
+
+/* Navbar Responsive Styles */
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/Image/spiritual/herosection.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  color: #fff;
+}
+
+.hero-heading {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(8rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.header_subtext{
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(4rem, 6vw, 2rem);
+}
+/* Common Card Styles */
+.card-custom {
+  border-radius: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-custom img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Tags and Buttons */
+.tag {
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  background-color: #1e4db7;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.btn-orange {
+  background-color: #e6552e;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #cf4723;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-book {
+  background-color: #f15a24;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #d14d1f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Content Sections */
+.content-section {
+  background-color: #fff;
+  color: #000;
+  padding: 80px 0;
+}
+
+/* Interest Cards */
+.interest-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.interest-card:hover {
+  transform: scale(1.05);
+}
+
+.interest-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Season Section */
+.season-tabs {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.season-tabs a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #003087;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.season-tabs .active {
+  border-bottom: 3px solid #003087;
+  color: #003087;
+}
+
+.season-tabs a:hover {
+  color: #ff6b35;
+}
+
+/* Travel Blog Section */
+.travel-blog-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.travel-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: "Aclonica", sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.view-all-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #357abd;
+  text-decoration: underline;
+}
+
+.cards-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease;
+  width: fit-content;
+}
+
+.travel-card {
+  flex: 0 0 350px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-humayun {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/humayun.png");
+}
+
+.card-mumbai {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/mumbai.png");
+}
+.card-delhi {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/delhi.png");
+}
+.card-kolkata {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/kolkata.png");
+}
+.card-noida {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/noida.png");
+}
+.card-gurgaon {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/gurgaon.png");
+}
+.card-gorakhpur {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/gorakhpur.png");
+}
+.card-lucknow {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../Image/lucknow.png");
+}
+
+.share-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-icon:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.share-icon i {
+  color: #666;
+  font-size: 16px;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.card-date {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.continue-reading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: gap 0.3s ease;
+}
+
+.continue-reading:hover {
+  color: white;
+  gap: 12px;
+}
+
+.continue-reading i {
+  font-size: 14px;
+}
+
+.navigation-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #4a90e2;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: #4a90e2;
+  color: white;
+  transform: scale(1.05);
+}
+
+.nav-btn i {
+  color: #4a90e2;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-btn:hover:not(:disabled) i {
+  color: white;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background: #f5f5f5;
+  border-color: #ddd;
+}
+
+.nav-btn:disabled i {
+  color: #999;
+}
+
+/* Festival Section */
+.festival-section {
+  min-height: 100vh;
+}
+
+.left-panel {
+  background-color: #f6e4c0;
+  padding: 60px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.festival-list h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.festival-list h1:hover {
+  color: #ff6b35;
+  cursor: pointer;
+}
+
+.festival-list h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.festival-list h3:hover {
+  color: #333;
+  transform: translateX(10px);
+}
+
+.right-panel {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/Image/holi.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: end;
+}
+
+.overlay-content {
+  padding: 40px;
+  max-width: 400px;
+}
+
+.overlay-content h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  margin: 5px 0 15px;
+  font-size: 1.1rem;
+}
+
+.overlay-content .badge {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.hero-text {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-family: "Aclonica", sans-serif;
+  font-weight: 700;
+  color: #cc5c23;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-text span {
+  font-weight: 400;
+  color: #9e3a1a;
+}
+
+.circle-btn {
+  width: clamp(120px, 15vw, 160px);
+  height: clamp(120px, 15vw, 160px);
+  border: 4px double #f1782e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circle-btn:hover {
+  transform: scale(1.05);
+  background: rgba(241, 120, 46, 0.1);
+}
+
+.description p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.description p strong {
+  font-weight: 600;
+}
+
+.stats {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #000;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #555;
+}
+
+.logo {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Why Choose Section */
+.why-choose-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/Image/whychooseusbackground.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.card-body-custom {
+  padding: 30px;
+  color: #000;
+  text-align: center;
+  height: 100%;
+}
+
+.card-body-custom h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.card-body-custom p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Carousel Section */
+.carousel-container {
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e0f2f1 0%,
+    #b2dfdb 30%,
+    #80cbc4 70%,
+    #4db6ac 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.slide-wrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+/* Left Content */
+.left-content {
+  position: absolute;
+  left: clamp(20px, 8vw, 120px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  max-width: clamp(300px, 40vw, 580px);
+}
+
+.main-title {
+  font-size: clamp(2rem, 3vw, 4.5rem);
+  font-family: "Aclonica", sans-serif;
+  font-weight: 500;
+  line-height: 0.95;
+  color: #1a1a1a;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Right Content */
+.right-content {
+  position: absolute;
+  right: clamp(20px, 8vw, 120px);
+  top: clamp(100px, 15vh, 140px);
+  max-width: clamp(280px, 30vw, 420px);
+  z-index: 10;
+}
+
+.description-text {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+/* Traveler Image */
+.traveler-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.traveler-image {
+  width: clamp(250px, 30vw, 450px);
+  height: clamp(300px, 40vh, 550px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+/* Spring Card */
+.spring-card {
+  position: absolute;
+  right: clamp(20px, 8vw, 120px);
+  top: 50%;
+  transform: translateY(-20%);
+  /* background: rgba(255, 255, 255, 0.95); */
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 15;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.spring-title {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.spring-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.learn-more-btn {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  width: 100%;
+}
+
+.learn-more-btn:hover {
+  background: #e64a19;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 87, 34, 0.4);
+}
+
+/* Navigation Arrows for Main Carousel */
+#travelCarousel .carousel-control-prev,
+#travelCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#travelCarousel .carousel-control-prev {
+  left: 40px;
+}
+
+#travelCarousel .carousel-control-next {
+  right: 40px;
+}
+
+#travelCarousel .carousel-control-prev:hover,
+#travelCarousel .carousel-control-next:hover {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#travelCarousel .carousel-control-prev-icon,
+#travelCarousel .carousel-control-next-icon {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.banner-text {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: "Aclonica", sans-serif;
+  font-weight: 800;
+  color: #f5722e;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite;
+  letter-spacing: 0.05em;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Popular Packages Section */
+.packages-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.packages-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.packages-container::-webkit-scrollbar {
+  display: none;
+}
+
+.package-card {
+  flex: 0 0 320px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header-custom {
+  padding: 20px 20px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #1e3a8a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-badge {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.875rem;
+}
+
+.price-badge .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-footer-custom {
+  padding: 20px;
+}
+
+.season-info {
+  text-align: center;
+  color: #999;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.filter-tab {
+  padding: 12px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-tab.active {
+  background: #1e3a8a;
+  color: white;
+  border-color: #1e3a8a;
+}
+
+.filter-tab:hover:not(.active) {
+  background: #f0f0f0;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #e8f2ff;
+  padding: 80px 0;
+}
+
+.testimonial-badge {
+  background-color: #4338ca;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: #1a1a1a;
+  font-family: Georgia, serif;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #2d3748;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.customer-time {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Pagination Dots */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cbd5e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #4338ca;
+}
+
+.dot:hover {
+  background-color: #a0aec0;
+}
+
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/Image/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 80px 0 30px;
+  position: relative;
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.newsletter-section h2 {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  color: white;
+  padding: 15px 10px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  min-height: 50px;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #dc5221;
+  box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+  color: white;
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-check {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-check-input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.form-check-input:checked {
+  background-color: #dc5221;
+  border-color: #ff6b35;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+}
+
+.form-check-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.submit-btn {
+  background: #dc5221;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #dc5221;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.destinations-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destinations-section h3 {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.destination-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(15px, 4vw, 40px);
+  row-gap: 20px;
+}
+
+.destination-links a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.destination-links a:hover {
+  color: #ff6b35;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.destination-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ff6b35;
+  transition: width 0.3s ease;
+}
+
+.destination-links a:hover::after {
+  width: 80%;
+}
+
+.contact-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.contact-info {
+  line-height: 1.8;
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.contact-info strong {
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.footer-links a:hover {
+  color: #ff6b35;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .left-content,
+  .right-content,
+  .spring-card {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .traveler-section {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .slide-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-section {
+    padding: 60px 0;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 100px 0 60px;
+  }
+
+  .festival-section .row {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    min-height: 50vh;
+    padding: 40px 20px;
+  }
+
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .why-choose-section {
+    padding: 60px 0;
+  }
+
+  .packages-section {
+    padding: 60px 0;
+  }
+
+  .testimonial-section {
+    padding: 60px 0;
+  }
+
+  .footer-section {
+    padding: 60px 0 30px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .travel-card {
+    flex: 0 0 280px;
+    height: 400px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .navigation-controls {
+    margin-top: 30px;
+  }
+
+  .nav-btn {
+    width: 45px;
+    height: 45px;
+    border-width: 2px;
+  }
+
+  .nav-btn i {
+    font-size: 16px;
+  }
+
+  .package-card {
+    flex: 0 0 280px;
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .filter-tab {
+    white-space: nowrap;
+  }
+
+  .testimonial-image {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .destination-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .destination-links a {
+    display: block;
+    text-align: center;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .travel-card {
+    flex: 0 0 250px;
+    height: 380px;
+  }
+
+  .cards-container {
+    margin-bottom: 20px;
+  }
+
+  .navigation-controls {
+    gap: 8px;
+    margin-top: 25px;
+  }
+
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-btn i {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 1.8rem !important;
+  }
+
+  .wt-tour-card {
+    margin-bottom: 20px;
+  }
+
+  .wt-pagination-container {
+    margin: 20px 0;
+  }
+
+  .pagination {
+    gap: 2px;
+  }
+
+  .pagination .page-link {
+    padding: 5px 8px;
+    font-size: 12px;
+    min-width: 32px;
+  }
+
+  /* Show only essential pagination buttons on very small screens */
+  .pagination .page-item:nth-child(n + 6):nth-last-child(n + 3) {
+    display: none;
+  }
+}
+
+.banner-text {
+  font-size: 1.5rem;
+}
+
+.bottom-banner {
+  height: 60px;
+}
+
+.circle-btn {
+  width: 120px;
+  height: 120px;
+  font-size: 0.8rem;
+}
+
+.quote-mark {
+  font-size: 3rem;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+}
+
+.main-heading {
+  font-size: 2rem;
+}
+
+.newsletter-section {
+  margin-bottom: 40px;
+}
+
+.destinations-section {
+  margin-bottom: 35px;
+}
+
+.form-check {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 12px 35px;
+  font-size: 0.95rem;
+}
+
+/* Loading Animation */
+.loading {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.loading.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.cards-wrapper::-webkit-scrollbar,
+.packages-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.cards-wrapper::-webkit-scrollbar-track,
+.packages-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.cards-wrapper::-webkit-scrollbar-thumb,
+.packages-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.cards-wrapper::-webkit-scrollbar-thumb:hover,
+.packages-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* card section 82 packges  */
+
+.wt-header-section {
+  background: white;
+  padding: 20px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.wt-packages-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin: 0;
+}
+
+.wt-view-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.wt-view-toggle .btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dee2e6;
+  background: white;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wt-view-toggle .btn.active {
+  background: #2c5aa0;
+  color: white;
+  border-color: #2c5aa0;
+}
+
+.wt-filter-dropdown {
+  background: white;
+  border: 1px solid #dee2e6;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #495057;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.wt-tour-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  overflow: hidden;
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  transition: transform 0.2s;
+}
+
+.wt-tour-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.wt-card-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.wt-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wt-duration-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.wt-heart-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wt-heart-icon i {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.wt-card-content {
+  padding: 20px;
+}
+
+.wt-tour-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 4px;
+}
+
+.wt-tour-location {
+  font-size: 12px;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.wt-tour-highlights {
+  margin-bottom: 20px;
+}
+
+.wt-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #495057;
+}
+
+.wt-highlight-item i {
+  color: #28a745;
+  margin-right: 8px;
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.wt-card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.wt-btn-view-details {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #2c5aa0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.wt-btn-view-details:hover {
+  color: #1e3d72;
+  text-decoration: underline;
+}
+
+.wt-btn-book-now {
+  flex: 1;
+  background: #dc5221;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.wt-btn-book-now:hover {
+  background: #c82333;
+}
+
+.wt-pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pagination .page-item {
+  margin: 0;
+}
+
+.pagination .page-link {
+  border: 1px solid #dee2e6;
+  color: #6c757d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 40px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination .page-item.active .page-link {
+  background: #2c5aa0;
+  border-color: #2c5aa0;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pagination .page-link:hover:not(.disabled) {
+  background: #e9ecef;
+  border-color: #dee2e6;
+  color: #495057;
+  transform: translateY(-2px);
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #ccc;
+  cursor: not-allowed;
+  background: #f8f9fa;
+}
+
+.pagination .page-item.disabled .page-link:hover {
+  transform: none;
+  background: #f8f9fa;
+}
+
+/* Wildlife Tour Cards Animation */
+.wt-tour-card {
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wt-tour-card.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.travel-destinations-wrapper {
+            padding: 40px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .destinations-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .destinations-main-title {
+            font-size: 2.5rem;
+            font-family: "Aclonica", sans-serif;
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+        }
+        
+        .carousel-navigation-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .carousel-arrow-button {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-arrow-button:hover {
+            background: #ff6e1b;
+            border-color: #ff6e1b;
+            color: white;
+        }
+        
+        .travel-location-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .travel-location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .travel-location-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .location-name-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 8px 8px;
+            border-radius: 20px;
+            font-weight: 400;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .travel-location-card.featured-destination-large {
+            height: 520px;
+        }
+        
+        @media (max-width: 768px) {
+            .destinations-main-title {
+                font-size: 1.8rem;
+                font-family: "Aclonica", sans-serif;
+            }
+            
+            .travel-location-card,
+            .travel-location-card.featured-destination-large {
+                height: 200px;
+                margin-bottom: 15px;
+            }
+            
+            .carousel-navigation-controls {
+                display: none;
+            }
+        }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .wt-header-controls {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .wt-filter-controls {
+    justify-content: space-between;
+  }
+
+  .wt-view-toggle {
+    justify-content: center;
+  }
+
+  .wt-packages-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .wt-pagination-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .pagination .page-link {
+    padding: 6px 10px;
+    font-size: 14px;
+    min-width: 36px;
+  }
+
+  /* Hide some page numbers on mobile for better space */
+  .pagination .page-item:nth-child(n + 8):nth-last-child(n + 3) {
+    display: none;
+  }
+}
+
+
+/* Festival Section */
+.festival-section {
+  min-height: 100vh;
+}
+
+.left-panel {
+  background-color: #f6e4c0;
+  padding: 60px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.festival-list h3 {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.festival-list h3:hover {
+  color: #333;
+  transform: translateX(10px);
+}
+
+.festival-list .festival-item.active {
+  font-family: "Aclonica", sans-serif !important;
+  color: #ff6b35 !important;
+  font-size: clamp(2.2rem, 4.5vw, 2.8rem) !important;
+  font-weight: 700 !important;
+  transform: translateX(10px);
+}
+
+.right-panel {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/Image/holi.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: end;
+}
+
+.overlay-content {
+  padding: 40px;
+  max-width: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.festival-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay-content h2 {
+  font-family: "Aclonica", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.overlay-content h2::first-letter {
+  font-size: 1.3em;
+  font-weight: 900;
+  font-family: "Aclonica", sans-serif;
+}
+
+.overlay-content p {
+  margin: 5px 0 15px;
+  font-size: 1.1rem;
+}
+
+.overlay-content .badge {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
