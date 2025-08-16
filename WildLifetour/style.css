@@ -20,7 +20,7 @@ body {
 .hero-section {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/Image/spiritual/herosection.jpg");
+    url("/Image/backgorund\ elephant.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
