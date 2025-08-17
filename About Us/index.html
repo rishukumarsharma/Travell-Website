@@ -1,140 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../sidebar_style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts for Aclonica -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="../sidebar_style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Google Fonts for Aclonica -->
-  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-</head>
+  <body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
+      <div class="container-fluid justify-content-between align-items-center">
+        <!-- Mobile Menu Button -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          id="sidebarToggle"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
 
-<body>
-  <!-- Responsive Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
-    <div class="container-fluid justify-content-between align-items-center">
-      <!-- Mobile Menu Button -->
-      <button class="navbar-toggler d-lg-none" type="button" id="sidebarToggle" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-
-      <!-- Logo - Always Visible -->
-      <a class="navbar-brand left-logo mx-auto mx-lg-0" href="#">
-        <img src="/Image/magical logo.png" alt="Logo" height="40" />
-      </a>
-
-      <!-- Desktop Navigation - Hidden on Mobile -->
-      <div class="d-none d-lg-flex align-items-center justify-content-between" style="width: 100%">
-        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4">
-          <li class="nav-item">
-            <a class="nav-link contact-info" href="#"><i class="bi bi-whatsapp"></i> +91 9999 999 999</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">EN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Second Page/secondpage.html">DESTINATIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Second Page/secondpage.html">EXPERIENCES</a>
-          </li>
-        </ul>
-        <a class="navbar-brand mx-auto mx-lg-0" href="#">
+        <!-- Logo - Always Visible -->
+        <a class="navbar-brand left-logo mx-auto mx-lg-0" href="#">
           <img src="/Image/magical logo.png" alt="Logo" height="40" />
         </a>
-        <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/Third Page/index.html">PLANNER QUIZ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#interests">TOUR BY INTERESTS</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="btn btn-orange">Enquire Now</a>
-          </li>
 
-          <button style="display: block" class="navbar-toggler" type="button" id="sidebarToggle2"
-            aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
-          </button>
-        </ul>
+        <!-- Desktop Navigation - Hidden on Mobile -->
+        <div
+          class="d-none d-lg-flex align-items-center justify-content-between"
+          style="width: 100%"
+        >
+          <ul
+            class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4"
+          >
+            <li class="nav-item">
+              <a class="nav-link contact-info" href="#"
+                ><i class="bi bi-whatsapp"></i> +91 9999 999 999</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >DESTINATIONS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Second Page/secondpage.html"
+                >EXPERIENCES</a
+              >
+            </li>
+          </ul>
+          <a class="navbar-brand mx-auto mx-lg-0" href="#">
+            <img src="/Image/magical logo.png" alt="Logo" height="40" />
+          </a>
+          <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/Third Page/index.html">PLANNER QUIZ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">TOUR BY INTERESTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="btn btn-orange">Enquire Now</a>
+            </li>
+
+            <button
+              style="display: block"
+              class="navbar-toggler"
+              type="button"
+              id="sidebarToggle2"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+          </ul>
+        </div>
+
+        <!-- Mobile Enquire Button -->
+        <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
+      </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="/Image/magical logo.png" alt="Logo" height="35" />
+        <button class="sidebar-close" id="sidebarClose">
+          <i class="bi bi-x-lg"></i>
+        </button>
       </div>
 
-      <!-- Mobile Enquire Button -->
-      <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
+      <div class="sidebar-content">
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Contact</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-whatsapp"></i>
+            <span>+91 9999 999 999</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Navigation</h6>
+          <a href="#destinations" class="sidebar-link">
+            <i class="bi bi-geo-alt"></i>
+            <span>Destinations</span>
+          </a>
+          <a href="#experiences" class="sidebar-link">
+            <i class="bi bi-star"></i>
+            <span>Experiences</span>
+          </a>
+          <a href="#planner" class="sidebar-link">
+            <i class="bi bi-clipboard-check"></i>
+            <span>Planner Quiz</span>
+          </a>
+          <a href="#interests" class="sidebar-link">
+            <i class="bi bi-heart"></i>
+            <span>Tour by Interests</span>
+          </a>
+        </div>
+
+        <div class="sidebar-section">
+          <h6 class="sidebar-title">Quick Actions</h6>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-search"></i>
+            <span>Search Tours</span>
+          </a>
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-translate"></i>
+            <span>Language (EN)</span>
+          </a>
+        </div>
+
+        <div class="sidebar-footer">
+          <a href="#contact" class="btn btn-orange w-100">
+            <i class="bi bi-envelope"></i>
+            Enquire Now
+          </a>
+        </div>
+      </div>
     </div>
-  </nav>
-  <div class="sidebar-overlay" id="sidebarOverlay"></div>
-  <div class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <img src="/Image/magical logo.png" alt="Logo" height="35" />
-      <button class="sidebar-close" id="sidebarClose">
-        <i class="bi bi-x-lg"></i>
-      </button>
-    </div>
 
-    <div class="sidebar-content">
-      <div class="sidebar-section">
-        <h6 class="sidebar-title">Contact</h6>
-        <a href="#" class="sidebar-link">
-          <i class="bi bi-whatsapp"></i>
-          <span>+91 9999 999 999</span>
-        </a>
-      </div>
-
-      <div class="sidebar-section">
-        <h6 class="sidebar-title">Navigation</h6>
-        <a href="#destinations" class="sidebar-link">
-          <i class="bi bi-geo-alt"></i>
-          <span>Destinations</span>
-        </a>
-        <a href="#experiences" class="sidebar-link">
-          <i class="bi bi-star"></i>
-          <span>Experiences</span>
-        </a>
-        <a href="#planner" class="sidebar-link">
-          <i class="bi bi-clipboard-check"></i>
-          <span>Planner Quiz</span>
-        </a>
-        <a href="#interests" class="sidebar-link">
-          <i class="bi bi-heart"></i>
-          <span>Tour by Interests</span>
-        </a>
-      </div>
-
-      <div class="sidebar-section">
-        <h6 class="sidebar-title">Quick Actions</h6>
-        <a href="#" class="sidebar-link">
-          <i class="bi bi-search"></i>
-          <span>Search Tours</span>
-        </a>
-        <a href="#" class="sidebar-link">
-          <i class="bi bi-translate"></i>
-          <span>Language (EN)</span>
-        </a>
-      </div>
-
-      <div class="sidebar-footer">
-        <a href="#contact" class="btn btn-orange w-100">
-          <i class="bi bi-envelope"></i>
-          Enquire Now
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Responsive Hero Section -->
-  <section class="magical-hero-section" id="home">
-    <!-- <div class="container mt-5">
+    <!-- Responsive Hero Section -->
+    <section class="magical-hero-section" id="home">
+      <!-- <div class="container mt-5">
       <div class="row text-center">
         <div class="col-md-4 mb-4">
           <h2>20+</h2>
@@ -150,580 +186,750 @@
         </div>
       </div>
     </div> -->
-  </section>
-<section class="py-5">
-  <div class="container">
-
-    <div class="row align-items-center mb-4">
-      <!-- Text -->
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <span class="badge bg-primary mb-2">ABOUT MAGICAL INDIA VACATION</span>
-        <h2 class="fw-bold mb-3">Our Story</h2>
-        <p>At Magical India Vacations, we believe travel is more than just visiting places — it’s about creating
-          memories that last a lifetime. With a passion for showcasing the diverse beauty of India, we design journeys
-          that capture the soul of each destination, from serene beaches to bustling cities, sacred temples to majestic
-          mountains.</p>
-        <p>Our team of travel experts curates personalized itineraries that blend comfort, adventure, and cultural
-          discovery. Whether you dream of cruising along Kerala’s backwaters, exploring Rajasthan’s royal heritage,
-          trekking in the Himalayas, or unwinding on Goa’s sunlit shores, we make it happen with seamless planning and
-          exceptional service.</p>
-        <p>We work with trusted partners across the country to ensure every detail is taken care of — from handpicked
-          stays and guided tours to authentic local experiences. Our mission is simple: to turn your travel dreams into
-          extraordinary realities, no matter your style, budget, or timeline.</p>
-              <!-- Counters -->
-    <div class="row text-center pt-4">
-      <div class="col-md-4 mb-3">
-        <h3 class="fw-bold">20+</h3>
-        <small>Years of<br>Expertise</small>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h3 class="fw-bold">500+</h3>
-        <small>Ready<br>Itineraries</small>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h3 class="fw-bold">2.5 K</h3>
-        <small>Customer<br>served for</small>
-      </div>
-    </div>
-      </div>
-
-      <!-- Image -->
-      <div class="col-lg-6">
-        <img src="/Image/ourstory.jpg" class="img-fluid rounded" alt="Map and camera">
-      </div>
-    </div>
-
-
-
-  </div>
-</section>
-
-
-<section class="py-5">
-  <div class="container">
-
-    <!-- Top Image -->
-    <div class="row justify-content-center mb-5">
-      <div class="col-12">
-        <img src="/Image/aboutus-vision.jpg" alt="Travel group" class="img-fluid rounded">
-      </div>
-    </div>
-
-    <!-- Three Columns -->
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold">Our Promise</h4>
-        <p>We promise to deliver travel experiences that go far beyond sightseeing. Every itinerary we create is designed
-          with care, ensuring you enjoy complete comfort, authentic local interactions, and unforgettable moments. From
-          planning to execution, our team stays by your side so you can travel stress-free and return home with lifelong
-          memories.</p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold">Our Motive</h4>
-        <p>At Magical India Vacations, our motive is to make every journey meaningful. We want travelers to feel
-          connected to India’s culture, people, and nature — while supporting local communities and sustainable tourism.
-          Our goal is to ensure that every trip leaves a positive impact on both the traveler and the destination.</p>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <h4 class="fw-bold">Our Vision</h4>
-        <p>Our vision is to become the most trusted and loved travel company in India by inspiring people from around the
-          world to explore the country’s true beauty, diversity, and heritage. We aim to create journeys that open
-          hearts, build connections, and encourage a more conscious and responsible way of travelling.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="py-5">
-  <div class="container text-center mb-4">
-    <h2 class="fw-bold" style="text-transform:uppercase;">The rest of your <span>“Happily Ever After”</span> starts with us</h2>
-    <button class="btn btn-primary mt-3">Book Now</button>
-  </div>
-
-  <hr>
-
-  <div class="container mt-4">
-    <div class="row align-items-center">
-      <!-- Left -->
-      <div class="col-lg-7 mb-4">
-        <img src="/Image/magical logo.png" class="img-fluid mb-3" alt="Magical India Vacations">
-        <p><strong>At Magical India Tour</strong>, travel has always been more than a passion — it’s a way of life. From a young age,
-          I was captivated by diverse cultures, traditions, and landscapes. This passion led me to a career in tourism,
-          not just to explore but to help others experience the magic of India. With a deep love for my homeland, I am
-          dedicated to curating unforgettable journeys that showcase the beauty and richness of Incredible India to the
-          world.</p>
-        <a href="#" class="text-primary">Learn more about us →</a>
-      </div>
-
-      <!-- Right (Counters) -->
-      <div class="col-lg-5 text-center">
-        <div class="mb-4">
-          <h3 class="fw-bold">20+</h3>
-          <small>Years of Expertise</small>
-        </div>
-        <div class="mb-4">
-          <h3 class="fw-bold">500+</h3>
-          <small>Ready Itineraries</small>
-        </div>
-        <div>
-          <h3 class="fw-bold">2.5 K</h3>
-          <small>Customer served so far</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold">Why Chose Us?</h2>
-    <p class="mb-4">
-      Because you're not just booking a tour – you're unlocking stories, traditions, and moments that only true insiders can offer.
-      Let us take you beyond the guidebooks and into the heart of Incredible India.
-    </p>
-
-    <!-- Carousel -->
-    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center">
-            <div class="col-6 col-md-2 mb-3">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row justify-content-center">
-            <div class="col-6 col-md-2 mb-3">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="video7.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-            <div class="col-6 col-md-2 mb-3 d-none d-md-block">
-              <video class="w-100 rounded" muted poster="/Image/video/video-2.mp4"
-                     onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                <source src="/Image/video/video-2.mp4" type="video/mp4"/>
-              </video>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </div>
-</section>
-<section class="py-5">
-  <div class="container">
-    <h3 class="fw-bold mb-4">Frequently Asked Questions</h3>
-
-    <div class="accordion" id="faqAccordion">
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Do I need prior experience for adventure activities?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            No. Most activities are beginner-friendly and guided by certified professionals.
-            Proper training is provided before you start.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Is it safe to participate in these tours?
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes. All tours follow strict safety protocols and are conducted by trained and licensed guides.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            What should I pack for an adventure tour?
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Comfortable clothing, sturdy shoes, personal medication, water bottle, and sun protection are recommended.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            What is the best time to go on adventure tours in India?
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            It depends on the destination, but generally October to March is considered ideal for most adventures.
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- Footer -->
-  <footer class="footer-section" id="contact">
-    <div class="footer-content">
+    </section>
+    <section class="py-5">
       <div class="container">
-        <!-- Newsletter Section -->
-        <div class="newsletter-section">
-          <h2 class="loading">Receive Inspiration In Your Inbox</h2>
-          <div class="row justify-content-center">
-            <div class="col-lg-10 col-xl-8">
-              <form id="newsletterForm" class="loading">
-                <div class="row g-3">
-                  <div class="col-md-4 col-sm-6">
-                    <input type="text" class="form-control" placeholder="First Name" name="firstName" required />
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                    <input type="text" class="form-control" placeholder="Last Name" name="lastName" required />
-                  </div>
-                  <div class="col-md-4 col-sm-12">
-                    <input type="email" class="form-control" placeholder="Email" name="email" required />
-                  </div>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="emailConsent" required />
-                  <label class="form-check-label" for="emailConsent">
-                    I'm happy to receive emails from Magical India Travels
-                  </label>
-                </div>
-                <button type="submit" class="submit-btn">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- Destinations Section -->
-        <div class="destinations-section" id="destinations">
-          <h3 class="loading">DESTINATIONS</h3>
-          <div class="destination-links">
-            <a href="#ladakh" class="loading">Ladakh</a>
-            <a href="#lakshyadeep" class="loading">Lakshyadeep</a>
-            <a href="#kashmir" class="loading">Kashmir</a>
-            <a href="#andaman" class="loading">Andaman & Nicobar Island</a>
-            <a href="#uttrakhand" class="loading">Uttrakhand</a>
-          </div>
-        </div>
-        <!-- Contact Section -->
-        <div class="contact-section">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-lg-5">
-              <div class="logo-container">
-                <img src="/Image/magical logo.png" alt="Magical India Travels Logo" class="loading" />
+        <div class="row align-items-center mb-4">
+          <!-- Text -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <span class="badge bg-primary mb-2"
+              >ABOUT MAGICAL INDIA VACATION</span
+            >
+            <h2 class="fw-bold mb-3" style="font-family: 'Aclonica', sans-serif;">Our Story</h2>
+            <p>
+              At Magical India Vacations, we believe travel is more than just
+              visiting places — it’s about creating memories that last a
+              lifetime. With a passion for showcasing the diverse beauty of
+              India, we design journeys that capture the soul of each
+              destination, from serene beaches to bustling cities, sacred
+              temples to majestic mountains.
+            </p>
+            <p>
+              Our team of travel experts curates personalized itineraries that
+              blend comfort, adventure, and cultural discovery. Whether you
+              dream of cruising along Kerala’s backwaters, exploring Rajasthan’s
+              royal heritage, trekking in the Himalayas, or unwinding on Goa’s
+              sunlit shores, we make it happen with seamless planning and
+              exceptional service.
+            </p>
+            <p>
+              We work with trusted partners across the country to ensure every
+              detail is taken care of — from handpicked stays and guided tours
+              to authentic local experiences. Our mission is simple: to turn
+              your travel dreams into extraordinary realities, no matter your
+              style, budget, or timeline.
+            </p>
+            <!-- Counters -->
+            <div class="row text-center pt-4">
+              <div class="col-md-4 mb-3">
+                <h3 class="fw-bold">20+</h3>
+                <small>Years of<br />Expertise</small>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-7">
-              <div class="contact-info loading">
-                <p><strong>IND:</strong> +91 2350983099</p>
-                <p><strong>Email:</strong> enquiry@gmail.com</p>
-                <p>
-                  <strong>Address:</strong><br />
-                  Dwarka Mor, Near Lal Farm,<br />
-                  New Delhi 110059
-                </p>
+              <div class="col-md-4 mb-3">
+                <h3 class="fw-bold">500+</h3>
+                <small>Ready<br />Itineraries</small>
+              </div>
+              <div class="col-md-4 mb-3">
+                <h3 class="fw-bold">2.5 K</h3>
+                <small>Customer<br />served for</small>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>&copy; 2025, All rights reserved.</p>
-          </div>
-          <div class="footer-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
+
+          <!-- Image -->
+          <div class="col-lg-6">
+            <img
+              src="/Image/ourstory.jpg"
+              class="img-fluid rounded-4"
+              alt="Map and camera"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
+    <section class="py-5">
+      <div class="container">
+        <!-- Top Image -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-12">
+            <img
+              src="/Image/aboutus-vision.jpg"
+              alt="Travel group"
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
 
-    // Mobile Menu Toggle Function
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById("mobileMenu");
-      const toggleBtn = document.querySelector(".magical-mobile-toggle i");
+        <!-- Three Columns -->
+        <div class="row text-center">
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">Our Promise</h4>
+            <p>
+              We promise to deliver travel experiences that go far beyond
+              sightseeing. Every itinerary we create is designed with care,
+              ensuring you enjoy complete comfort, authentic local interactions,
+              and unforgettable moments. From planning to execution, our team
+              stays by your side so you can travel stress-free and return home
+              with lifelong memories.
+            </p>
+          </div>
 
-      mobileMenu.classList.toggle("active");
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">Our Motive</h4>
+            <p>
+              At Magical India Vacations, our motive is to make every journey
+              meaningful. We want travelers to feel connected to India’s
+              culture, people, and nature — while supporting local communities
+              and sustainable tourism. Our goal is to ensure that every trip
+              leaves a positive impact on both the traveler and the destination.
+            </p>
+          </div>
 
-      if (mobileMenu.classList.contains("active")) {
-        toggleBtn.className = "bi bi-x";
-      } else {
-        toggleBtn.className = "bi bi-list";
-      }
-    }
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold">Our Vision</h4>
+            <p>
+              Our vision is to become the most trusted and loved travel company
+              in India by inspiring people from around the world to explore the
+              country’s true beauty, diversity, and heritage. We aim to create
+              journeys that open hearts, build connections, and encourage a more
+              conscious and responsible way of travelling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container text-center mb-4">
+        <h2 class="fw-bold" style="text-transform: uppercase">
+          The rest of your <span>“Happily Ever After”</span> starts with us
+        </h2>
+        <button class="btn btn-primary mt-3">Book Now</button>
+      </div>
 
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll(".magical-mobile-menu a").forEach((link) => {
-      link.addEventListener("click", () => {
+      <hr />
+
+      <div class="container mt-4">
+        <div class="row align-items-center">
+          <!-- Left -->
+          <div class="col-lg-7 mb-4">
+            <img
+              src="/Image/magical logo.png"
+              class="img-fluid mb-3"
+              alt="Magical India Vacations"
+            />
+            <p>
+              <strong>At Magical India Tour</strong>, travel has always been
+              more than a passion — it’s a way of life. From a young age, I was
+              captivated by diverse cultures, traditions, and landscapes. This
+              passion led me to a career in tourism, not just to explore but to
+              help others experience the magic of India. With a deep love for my
+              homeland, I am dedicated to curating unforgettable journeys that
+              showcase the beauty and richness of Incredible India to the world.
+            </p>
+            <a href="#" class="text-primary">Learn more about us →</a>
+          </div>
+
+          <!-- Right (Counters) -->
+          <div class="col-lg-5 text-center">
+            <div class="mb-4">
+              <h3 class="fw-bold">20+</h3>
+              <small>Years of Expertise</small>
+            </div>
+            <div class="mb-4">
+              <h3 class="fw-bold">500+</h3>
+              <small>Ready Itineraries</small>
+            </div>
+            <div>
+              <h3 class="fw-bold">2.5 K</h3>
+              <small>Customer served so far</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold">Why Chose Us?</h2>
+        <p class="mb-4">
+          Because you're not just booking a tour – you're unlocking stories,
+          traditions, and moments that only true insiders can offer. Let us take
+          you beyond the guidebooks and into the heart of Incredible India.
+        </p>
+
+        <!-- Carousel -->
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-2 mb-3">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-2 mb-3">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="video7.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="col-6 col-md-2 mb-3 d-none d-md-block">
+                  <video
+                    class="w-100 rounded"
+                    muted
+                    poster="/Image/video/video-2.mp4"
+                    onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;"
+                  >
+                    <source src="/Image/video/video-2.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#videoCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#videoCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Frequently Asked Questions</h3>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Do I need prior experience for adventure activities?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                No. Most activities are beginner-friendly and guided by
+                certified professionals. Proper training is provided before you
+                start.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Is it safe to participate in these tours?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes. All tours follow strict safety protocols and are conducted
+                by trained and licensed guides.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                What should I pack for an adventure tour?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Comfortable clothing, sturdy shoes, personal medication, water
+                bottle, and sun protection are recommended.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What is the best time to go on adventure tours in India?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                It depends on the destination, but generally October to March is
+                considered ideal for most adventures.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contact">
+      <div class="footer-content">
+        <div class="container">
+          <!-- Newsletter Section -->
+          <div class="newsletter-section">
+            <h2 class="loading">Receive Inspiration In Your Inbox</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-8">
+                <form id="newsletterForm" class="loading">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailConsent"
+                      required
+                    />
+                    <label class="form-check-label" for="emailConsent">
+                      I'm happy to receive emails from Magical India Travels
+                    </label>
+                  </div>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Destinations Section -->
+          <div class="destinations-section" id="destinations">
+            <h3 class="loading">DESTINATIONS</h3>
+            <div class="destination-links">
+              <a href="#ladakh" class="loading">Ladakh</a>
+              <a href="#lakshyadeep" class="loading">Lakshyadeep</a>
+              <a href="#kashmir" class="loading">Kashmir</a>
+              <a href="#andaman" class="loading">Andaman & Nicobar Island</a>
+              <a href="#uttrakhand" class="loading">Uttrakhand</a>
+            </div>
+          </div>
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="logo-container">
+                  <img
+                    src="/Image/magical logo.png"
+                    alt="Magical India Travels Logo"
+                    class="loading"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="contact-info loading">
+                  <p><strong>IND:</strong> +91 2350983099</p>
+                  <p><strong>Email:</strong> enquiry@gmail.com</p>
+                  <p>
+                    <strong>Address:</strong><br />
+                    Dwarka Mor, Near Lal Farm,<br />
+                    New Delhi 110059
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="copyright">
+              <p>&copy; 2025, All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms & Conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      // Mobile Menu Toggle Function
+      function toggleMobileMenu() {
         const mobileMenu = document.getElementById("mobileMenu");
         const toggleBtn = document.querySelector(".magical-mobile-toggle i");
 
-        mobileMenu.classList.remove("active");
-        toggleBtn.className = "bi bi-list";
-      });
-    });
+        mobileMenu.classList.toggle("active");
 
-    // Close mobile menu when clicking outside
-    document.addEventListener("click", (e) => {
-      const mobileMenu = document.getElementById("mobileMenu");
-      const navbar = document.querySelector(".magical-navbar");
-
-      if (
-        !navbar.contains(e.target) &&
-        mobileMenu.classList.contains("active")
-      ) {
-        mobileMenu.classList.remove("active");
-        document.querySelector(".magical-mobile-toggle i").className =
-          "bi bi-list";
+        if (mobileMenu.classList.contains("active")) {
+          toggleBtn.className = "bi bi-x";
+        } else {
+          toggleBtn.className = "bi bi-list";
+        }
       }
-    });
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".magical-mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          const mobileMenu = document.getElementById("mobileMenu");
+          const toggleBtn = document.querySelector(".magical-mobile-toggle i");
+
+          mobileMenu.classList.remove("active");
+          toggleBtn.className = "bi bi-list";
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const navbar = document.querySelector(".magical-navbar");
+
+        if (
+          !navbar.contains(e.target) &&
+          mobileMenu.classList.contains("active")
+        ) {
+          mobileMenu.classList.remove("active");
+          document.querySelector(".magical-mobile-toggle i").className =
+            "bi bi-list";
         }
       });
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const sidebarToggle = document.getElementById("sidebarToggle");
-      const sidebarToggle2 = document.getElementById("sidebarToggle2");
-      const sidebarClose = document.getElementById("sidebarClose");
-      const sidebar = document.getElementById("sidebar");
-      const sidebarOverlay = document.getElementById("sidebarOverlay");
-      const body = document.body;
 
-      // Open sidebar
-      function openSidebar() {
-        sidebar.classList.add("active");
-        sidebarOverlay.classList.add("active");
-        body.classList.add("sidebar-open");
-      }
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sidebarToggle = document.getElementById("sidebarToggle");
+        const sidebarToggle2 = document.getElementById("sidebarToggle2");
+        const sidebarClose = document.getElementById("sidebarClose");
+        const sidebar = document.getElementById("sidebar");
+        const sidebarOverlay = document.getElementById("sidebarOverlay");
+        const body = document.body;
 
-      // Close sidebar
-      function closeSidebar() {
-        sidebar.classList.remove("active");
-        sidebarOverlay.classList.remove("active");
-        body.classList.remove("sidebar-open");
-      }
+        // Open sidebar
+        function openSidebar() {
+          sidebar.classList.add("active");
+          sidebarOverlay.classList.add("active");
+          body.classList.add("sidebar-open");
+        }
 
-      // Event listeners
-      if (sidebarToggle) {
-        sidebarToggle.addEventListener("click", openSidebar);
-      }
-      if (sidebarToggle2) {
-        sidebarToggle2.addEventListener("click", openSidebar);
-      }
+        // Close sidebar
+        function closeSidebar() {
+          sidebar.classList.remove("active");
+          sidebarOverlay.classList.remove("active");
+          body.classList.remove("sidebar-open");
+        }
 
-      if (sidebarClose) {
-        sidebarClose.addEventListener("click", closeSidebar);
-      }
+        // Event listeners
+        if (sidebarToggle) {
+          sidebarToggle.addEventListener("click", openSidebar);
+        }
+        if (sidebarToggle2) {
+          sidebarToggle2.addEventListener("click", openSidebar);
+        }
 
-      if (sidebarOverlay) {
-        sidebarOverlay.addEventListener("click", closeSidebar);
-      }
+        if (sidebarClose) {
+          sidebarClose.addEventListener("click", closeSidebar);
+        }
 
-      // Close sidebar when clicking on navigation links
-      document.querySelectorAll(".sidebar-link").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          // Only close if it's an anchor link (starts with #)
-          if (this.getAttribute("href").startsWith("#")) {
+        if (sidebarOverlay) {
+          sidebarOverlay.addEventListener("click", closeSidebar);
+        }
+
+        // Close sidebar when clicking on navigation links
+        document.querySelectorAll(".sidebar-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            // Only close if it's an anchor link (starts with #)
+            if (this.getAttribute("href").startsWith("#")) {
+              closeSidebar();
+            }
+          });
+        });
+
+        // Close sidebar on escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && sidebar.classList.contains("active")) {
+            closeSidebar();
+          }
+        });
+
+        // Handle window resize
+        window.addEventListener("resize", () => {
+          if (
+            window.innerWidth >= 992 &&
+            sidebar.classList.contains("active")
+          ) {
+            closeSidebar();
+          }
+        });
+
+        // Enhanced touch support for mobile
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener("touchstart", (e) => {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener("touchend", (e) => {
+          const touchEndX = e.changedTouches[0].clientX;
+          const touchEndY = e.changedTouches[0].clientY;
+          const diffX = touchStartX - touchEndX;
+          const diffY = touchStartY - touchEndY;
+
+          // Swipe right to open sidebar (from left edge)
+          if (touchStartX < 50 && diffX < -50 && Math.abs(diffY) < 100) {
+            openSidebar();
+          }
+
+          // Swipe left to close sidebar
+          if (
+            sidebar.classList.contains("active") &&
+            diffX > 50 &&
+            Math.abs(diffY) < 100
+          ) {
             closeSidebar();
           }
         });
       });
 
-      // Close sidebar on escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && sidebar.classList.contains("active")) {
-          closeSidebar();
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.style.background = "rgba(0, 0, 0, 0.9)";
+        } else {
+          navbar.style.background = "rgba(0, 0, 0, 0.6)";
         }
       });
-
-      // Handle window resize
-      window.addEventListener("resize", () => {
-        if (
-          window.innerWidth >= 992 &&
-          sidebar.classList.contains("active")
-        ) {
-          closeSidebar();
-        }
-      });
-
-      // Enhanced touch support for mobile
-      let touchStartX = 0;
-      let touchStartY = 0;
-
-      document.addEventListener("touchstart", (e) => {
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
-      });
-
-      document.addEventListener("touchend", (e) => {
-        const touchEndX = e.changedTouches[0].clientX;
-        const touchEndY = e.changedTouches[0].clientY;
-        const diffX = touchStartX - touchEndX;
-        const diffY = touchStartY - touchEndY;
-
-        // Swipe right to open sidebar (from left edge)
-        if (touchStartX < 50 && diffX < -50 && Math.abs(diffY) < 100) {
-          openSidebar();
-        }
-
-        // Swipe left to close sidebar
-        if (
-          sidebar.classList.contains("active") &&
-          diffX > 50 &&
-          Math.abs(diffY) < 100
-        ) {
-          closeSidebar();
-        }
-      });
-    });
-
-    window.addEventListener("scroll", function () {
-      const navbar = document.querySelector(".navbar");
-      if (window.scrollY > 100) {
-        navbar.style.background = "rgba(0, 0, 0, 0.9)";
-      } else {
-        navbar.style.background = "rgba(0, 0, 0, 0.6)";
-      }
-    });
-
-    $(".exotic-journey-slider-track").slick({
-      centerMode: true,
-      centerPadding: "60px",
-      slidesToShow: 5,
-      arrows: true,
-      dots: false,
-      prevArrow:
-        '<button type="button" class="slick-prev carousel-nav prev"><i class="fas fa-chevron-left"></i></button>',
-      nextArrow:
-        '<button type="button" class="slick-next carousel-nav next"><i class="fas fa-chevron-right"></i></button>',
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            centerPadding: "30px",
+      $(".exotic-journey-slider-track").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 5,
+        arrows: true,
+        dots: false,
+        prevArrow:
+          '<button type="button" class="slick-prev carousel-nav prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:
+          '<button type="button" class="slick-next carousel-nav next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "30px",
+            },
           },
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            centerPadding: "40px",
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "40px",
+            },
           },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            centerPadding: "20px",
-            arrows: false,
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              centerPadding: "20px",
+              arrows: false,
+            },
           },
-        },
-      ],
-    });
-  </script>
-  <!-- <script>Rishu kumar</script> -->
-</body>
-
+        ],
+      });
+    </script>
+    <!-- <script>Rishu kumar</script> -->
+  </body>
 </html>

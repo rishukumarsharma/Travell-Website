@@ -500,7 +500,7 @@ body {
 .magical-hero-section {
   min-height: 90vh;
   background: 
-    url("/Image/abouthero.jpg");
+    url("/Image/heroaboutus.svg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
