@@ -1056,4 +1056,52 @@ document.addEventListener('DOMContentLoaded', () => {
                     tile.style.transform = 'translateY(0)';
                 }, index * 100);
             });
+              includeHTML("header-file", "../header/index.html");
         });
+        
+function includeHTML(id, file) {
+  const container = document.getElementById(id);
+  if (!container) return;
+  fetch(file)
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+      if (window.initSidebar) window.initSidebar();
+    });
+}
+
+// Sidebar re-initialization for dynamic header
+window.initSidebar = function() {
+  const sidebarToggle = document.getElementById("sidebarToggle");
+  const sidebarToggle2 = document.getElementById("sidebarToggle2");
+  const sidebarClose = document.getElementById("sidebarClose");
+  const sidebar = document.getElementById("sidebar");
+  const sidebarOverlay = document.getElementById("sidebarOverlay");
+  const body = document.body;
+  function openSidebar() {
+    sidebar.classList.add("active");
+    sidebarOverlay.classList.add("active");
+    body.classList.add("sidebar-open");
+  }
+  function closeSidebar() {
+    sidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+    body.classList.remove("sidebar-open");
+  }
+  if (sidebarToggle) sidebarToggle.addEventListener("click", openSidebar);
+  if (sidebarToggle2) sidebarToggle2.addEventListener("click", openSidebar);
+  if (sidebarClose) sidebarClose.addEventListener("click", closeSidebar);
+  if (sidebarOverlay) sidebarOverlay.addEventListener("click", closeSidebar);
+  document.querySelectorAll(".sidebar-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      if (this.getAttribute("href") && this.getAttribute("href").startsWith("#")) closeSidebar();
+    });
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && sidebar.classList.contains("active")) closeSidebar();
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 992 && sidebar.classList.contains("active")) closeSidebar();
+  });
+}
+
