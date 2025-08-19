@@ -237,29 +237,35 @@ body {
   overflow: hidden;
   border-radius: 20px;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .kerala-slider-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 500%;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
 .kerala-slide {
   width: 20%;
   flex-shrink: 0;
+  padding: 0 0.5rem;
 }
 
 .kerala-main-card {
   background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
   color: white;
-  padding: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
   border-radius: 20px;
-  height: clamp(350px, 50vh, 400px);
+  height: auto;
+  min-height: clamp(300px, 50vh, 400px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .kerala-card-title {
@@ -276,17 +282,25 @@ body {
 }
 
 .kerala-book-btn {
-  background-color: #ea580c;
-  padding: 1rem 2rem;
+  background-color: #ea580c !important;
+  color: #ffffff !important;
+  padding: 0.875rem 2rem;
   border-radius: 10px;
   font-weight: 600;
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   transition: all 0.3s ease;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+  margin-top: 1rem;
 }
 
 .kerala-book-btn:hover {
-  background-color: #dc2626;
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
   transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(220, 38, 38, 0.3);
 }
 
 .kerala-nav-arrows {
@@ -1207,6 +1221,43 @@ body {
 }
 
 /* Mobile specific fixes */
+@media (max-width: 991px) {
+  .kerala-slider-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .kerala-slide {
+    width: 85%;
+    min-width: 85%;
+    scroll-snap-align: center;
+    padding: 0 0.5rem;
+  }
+  
+  .kerala-main-card {
+    min-height: 280px;
+    padding: 1.5rem;
+  }
+  
+  .kerala-card-title {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+  
+  .kerala-card-description {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+  
+  .kerala-travel-container .col-lg-3,
+  .kerala-travel-container .col-lg-4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: 576px) {
   .carousel-nav {
     display: none;
@@ -1214,6 +1265,21 @@ body {
 
   .kerala-nav-arrows {
     display: none;
+  }
+  
+  .kerala-slide {
+    width: 90%;
+    min-width: 90%;
+  }
+  
+  .kerala-main-card {
+    min-height: 250px;
+    padding: 1.25rem;
+  }
+  
+  .kerala-book-btn {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
   }
 }
 
