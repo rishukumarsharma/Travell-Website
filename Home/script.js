@@ -978,6 +978,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   includeHTML("header-file", "../header/index.html");
+  includeHTML("footer-file", "../footer/index.html");
 });
 
 

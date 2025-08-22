@@ -859,6 +859,7 @@ class WildlifeToursPagination {
 
     scrollToTop() {
         const packageSection = document.querySelector('.wt-header-section');
+
         if (packageSection) {
             packageSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -1057,6 +1058,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, index * 100);
             });
               includeHTML("header-file", "../header/index.html");
+              includeHTML("footer-file", "../footer/index.html");
+
         });
         
 
@@ -1072,6 +1075,7 @@ function includeHTML(id, file) {
 }
 
 // Sidebar re-initialization for dynamic header
+
 window.initSidebar = function() {
   const sidebarToggle = document.getElementById("sidebarToggle");
   const sidebarToggle2 = document.getElementById("sidebarToggle2");

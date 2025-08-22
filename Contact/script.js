@@ -61,8 +61,8 @@
             const sidebar = document.getElementById("sidebar");
             const sidebarOverlay = document.getElementById("sidebarOverlay");
             const body = document.body;
-            
-  includeHTML("header-file", "../header/index.html");
+            includeHTML("header-file", "../header/index.html");
+            includeHTML("footer-file", "../footer/index.html");
 
             // Open sidebar
             function openSidebar() {

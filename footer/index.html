@@ -1,153 +1,118 @@
-<!-- Navbar -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>Document</title>
     <link rel="stylesheet" href="../sidebar_style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark px-3 fixed-top">
-      <div class="container-fluid justify-content-between align-items-center">
-        <!-- Mobile Menu Button -->
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          id="sidebarToggle"
-          aria-label="Toggle navigation"
-        >
-          <i class="bi bi-list"></i>
-        </button>
+    <footer class="footer-section" id="contact">
+      <div class="footer-content">
+        <div class="container">
+          <!-- Newsletter Section -->
+          <div class="newsletter-section">
+            <h2 class="">Receive Inspiration In Your Inbox</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-xl-8">
+                <form id="newsletterForm" class="">
+                  <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="First Name"
+                        name="firstName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        name="lastName"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        name="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailConsent"
+                      required
+                    />
+                    <label class="form-check-label" for="emailConsent">
+                      I'm happy to receive emails from Magical India Travels
+                    </label>
+                  </div>
+                  <button type="submit" class="submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
 
-        <!-- Logo - Always Visible -->
-        <a
-          class="navbar-brand left-logo mx-auto mx-lg-0"
-          href="./Home/index.html"
-        >
-          <img src="./Image/magical-logo.png" alt="Logo" height="40" />
-        </a>
+          <!-- Destinations Section -->
+          <div class="destinations-section" id="destinations">
+            <h3 class="">DESTINATIONS</h3>
+            <div class="destination-links">
+              <a href="#ladakh" class="">Ladakh</a>
+              <a href="#lakshyadeep" class="">Lakshyadeep</a>
+              <a href="#kashmir" class="">Kashmir</a>
+              <a href="#andaman" class="">Andaman & Nicobar Island</a>
+              <a href="#uttrakhand" class="">Uttrakhand</a>
+            </div>
+          </div>
 
-        <!-- Desktop Navigation - Hidden on Mobile -->
-        <div
-          class="d-none d-lg-flex align-items-center justify-content-between"
-          style="width: 100%"
-        >
-          <ul
-            class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0 me-4"
-          >
-            <li class="nav-item">
-              <a class="nav-link contact-info" href="#"
-                ><i class="bi bi-whatsapp"></i> +91 9999 999 999</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">EN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Destination/index.html"
-                >DESTINATIONS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Second Page/secondpage.html"
-                >EXPERIENCES</a
-              >
-            </li>
-          </ul>
-          <a class="navbar-brand mx-auto mx-lg-0" href="/Home/index.html">
-            <img src="/Image/magical logo.png" alt="Logo" height="40" />
-          </a>
-          <ul class="navbar-nav d-flex flex-row align-items-center gap-3 mb-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/About Us/index.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tour by Interest</a>
-            </li>
-            <li class="nav-item">
-              <a href="/Contact/index.html" class="btn btn-orange"
-                >Enquire Now</a
-              >
-            </li>
+          <!-- Contact Section -->
+          <div class="contact-section">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-lg-5">
+                <div class="logo-container">
+                  <img
+                    src="/Image/magical logo.png"
+                    alt="Magical India Travels Logo"
+                    class=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-7">
+                <div class="contact-info loading">
+                  <p><strong>IND:</strong> +91 2350983099</p>
+                  <p><strong>Email:</strong> enquiry@gmail.com</p>
+                  <p>
+                    <strong>Address:</strong><br />
+                    Dwarka Mor, Near Lal Farm,<br />
+                    New Delhi 110059
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <button
-              style="display: block"
-              class="navbar-toggler"
-              type="button"
-              id="sidebarToggle2"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-list"></i>
-            </button>
-          </ul>
-        </div>
-
-        <!-- Mobile Enquire Button -->
-        <a href="#contact" class="btn btn-orange btn-sm d-lg-none">Enquire</a>
-      </div>
-    </nav>
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <img src="/Image/magical logo.png" alt="Logo" height="35" />
-        <button class="sidebar-close" id="sidebarClose">
-          <i class="bi bi-x-lg"></i>
-        </button>
-      </div>
-
-      <div class="sidebar-content">
-        <div class="sidebar-section">
-          <h6 class="sidebar-title">Contact</h6>
-          <a href="#" class="sidebar-link">
-            <i class="bi bi-whatsapp"></i>
-            <span>+91 9999 999 999</span>
-          </a>
-        </div>
-
-        <div class="sidebar-section">
-          <h6 class="sidebar-title">Navigation</h6>
-          <a href="/Destination/index.html" class="sidebar-link">
-            <i class="bi bi-geo-alt"></i>
-            <span>Destinations</span>
-          </a>
-          <a href="#experiences" class="sidebar-link">
-            <i class="bi bi-star"></i>
-            <span>Experiences</span>
-          </a>
-          <a href="#planner" class="sidebar-link">
-            <i class="bi bi-clipboard-check"></i>
-            <span>Planner Quiz</span>
-          </a>
-          <a href="/About Us/index.html" class="sidebar-link">
-            <i class="bi bi-heart"></i>
-            <span>About Us</span>
-          </a>
-        </div>
-
-        <div class="sidebar-section">
-          <h6 class="sidebar-title">Quick Actions</h6>
-          <a href="#" class="sidebar-link">
-            <i class="bi bi-search"></i>
-            <span>Search Tours</span>
-          </a>
-          <a href="#" class="sidebar-link">
-            <i class="bi bi-translate"></i>
-            <span>Language (EN)</span>
-          </a>
-        </div>
-
-        <div class="sidebar-footer">
-          <a href="#contact" class="btn btn-orange w-100">
-            <i class="bi bi-envelope"></i>
-            Enquire Now
-          </a>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="copyright">
+              <p>&copy; 2025, All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms & Conditions</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -513,7 +478,7 @@
           overlayContent.style.opacity = "0";
           setTimeout(() => {
             overlayContent.innerHTML = `
-            <h2 class="loading">${data.title}</h2>
+            <h2 class="">${data.title}</h2>
             <p>${data.location}</p>
             <p class="festival-description mb-3">${data.description}</p>
             <div class="d-flex justify-content-between align-items-center mt-3">

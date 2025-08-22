@@ -1057,6 +1057,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, index * 100);
             });
               includeHTML("header-file", "../header/index.html");
+            includeHTML("footer-file", "../footer/index.html");
         });
         
 function includeHTML(id, file) {
