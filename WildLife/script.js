@@ -845,6 +845,8 @@ function includeHTML(id, file) {
       document.getElementById(id).innerHTML = html;
       if (window.initSidebar) window.initSidebar();
       includeHTML("header-file", "../header/index.html");
+      includeHTML("footer-file", "../footer/index.html");
+      
     });
 }
 

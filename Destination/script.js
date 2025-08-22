@@ -305,6 +305,7 @@
           new TravelBlogSlider();
         }, 100);
         includeHTML("header-file", "../header/index.html");
+        includeHTML("footer-file", "../footer/index.html");
       });
 
       // Travel Blog Slider Class
